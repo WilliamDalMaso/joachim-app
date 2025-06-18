@@ -100,7 +100,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   );
 
   return (
-    <div className={`h-screen bg-black text-white flex flex-col ${className}`}>
+    <div className={`min-h-[100dvh] h-[100dvh] bg-black text-white flex flex-col ${className}`}>
       {/* Drawer Overlay */}
       {drawerOpen && (
         <div 
