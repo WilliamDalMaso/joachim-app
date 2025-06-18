@@ -1,0 +1,25 @@
+services:
+  # Backend API service
+  - type: web
+    name: joachim-app-api
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false
+    healthCheckPath: /health
+
+  # Frontend static site
+  - type: web
+    name: joachim-app-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://joachim-app-api.onrender.com 
