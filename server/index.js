@@ -42,9 +42,19 @@ app.post('/session', async (req, res) => {
       });
     }
 
-    const { model = 'gpt-4o-mini-realtime-preview-2024-12-17', voice = 'verse' } = req.body;
+    const { model = 'gpt-4o-mini-realtime-preview-2024-12-17', voice = 'verse', instructions } = req.body;
     
     console.log('Creating session with model:', model, 'voice:', voice);
+    
+    const sessionData = {
+      model,
+      voice,
+    };
+
+    // Add instructions if provided
+    if (instructions) {
+      sessionData.instructions = instructions;
+    }
     
     const response = await fetch('https://api.openai.com/v1/realtime/sessions', {
       method: 'POST',
@@ -52,10 +62,7 @@ app.post('/session', async (req, res) => {
         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        model,
-        voice,
-      }),
+      body: JSON.stringify(sessionData),
     });
 
     if (!response.ok) {

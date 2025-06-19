@@ -24,6 +24,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
     stopListening,
     sendTextMessage,
     userActivated,
+    hasMicrophonePermission,
   } = useRealtimeConversation();
 
   const botModules = ['Listening', 'Reading', 'Speaking', 'Writing'];
@@ -170,7 +171,10 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
                 <div className="w-8 h-8 bg-white/10 rounded-full" />
               </div>
               <p className="text-white/60 text-sm">
-                Click the voice button to start a conversation
+                {hasMicrophonePermission 
+                  ? 'Click the voice button to start a conversation'
+                  : 'Click the voice button to grant microphone permission and start'
+                }
               </p>
             </div>
           </div>

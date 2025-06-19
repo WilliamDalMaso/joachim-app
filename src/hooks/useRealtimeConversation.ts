@@ -17,6 +17,7 @@ interface UseRealtimeConversationReturn {
   stopListening: () => void;
   sendTextMessage: (text: string) => void;
   userActivated: boolean;
+  hasMicrophonePermission: boolean;
 }
 
 export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
@@ -27,12 +28,47 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
   const [error, setError] = useState<string | null>(null);
   const [isConnecting, setIsConnecting] = useState(false);
   const [userActivated, setUserActivated] = useState(false);
+  const [hasMicrophonePermission, setHasMicrophonePermission] = useState(false);
 
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const audioElementRef = useRef<HTMLAudioElement | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
   const audioTrackRef = useRef<MediaStreamTrack | null>(null);
+
+  // Request microphone permission once
+  const requestMicrophonePermission = useCallback(async () => {
+    if (hasMicrophonePermission && mediaStreamRef.current) {
+      console.log('Microphone permission already granted');
+      return mediaStreamRef.current;
+    }
+
+    try {
+      console.log('Requesting microphone permission...');
+      const mediaStream = await navigator.mediaDevices.getUserMedia({
+        audio: {
+          echoCancellation: true,
+          noiseSuppression: true,
+          autoGainControl: true,
+        },
+      });
+      
+      mediaStreamRef.current = mediaStream;
+      const audioTrack = mediaStream.getAudioTracks()[0];
+      audioTrackRef.current = audioTrack;
+      
+      // Initially disable the microphone until user activates
+      audioTrack.enabled = false;
+      setHasMicrophonePermission(true);
+      
+      console.log('Microphone permission granted (initially disabled)');
+      return mediaStream;
+    } catch (err) {
+      console.error('Microphone permission denied:', err);
+      setError('Microphone permission is required for voice conversation');
+      throw err;
+    }
+  }, [hasMicrophonePermission]);
 
   const connect = useCallback(async () => {
     // Prevent duplicate connections
@@ -57,6 +93,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
         body: JSON.stringify({
           model: 'gpt-4o-mini-realtime-preview-2024-12-17',
           voice: 'verse',
+          instructions: 'You are Joachim, an English language learning assistant. You must always speak in English, but you can also understand and respond to Portuguese if the user speaks Portuguese. Your primary goal is to help users improve their English skills through conversation. Be friendly, encouraging, and provide helpful corrections when needed.',
         }),
       });
 
@@ -91,14 +128,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
 
       // Get user media
       console.log('Requesting microphone access...');
-      const mediaStream = await navigator.mediaDevices.getUserMedia({
-        audio: {
-          echoCancellation: true,
-          noiseSuppression: true,
-          autoGainControl: true,
-        },
-      });
-      mediaStreamRef.current = mediaStream;
+      const mediaStream = await requestMicrophonePermission();
       
       // Store the audio track reference for enabling/disabling
       const audioTrack = mediaStream.getAudioTracks()[0];
@@ -166,7 +196,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
 
       // Set remote description
       console.log('Setting remote description...');
-      const answer = {
+      const answer: RTCSessionDescriptionInit = {
         type: 'answer',
         sdp: await sdpResponse.text(),
       };
@@ -188,7 +218,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
   const disconnect = useCallback(() => {
     console.log('Disconnecting...');
     
-    // Reset all state
+    // Reset connection state but keep microphone permission
     setIsConnected(false);
     setIsConnecting(false);
     setIsListening(false);
@@ -196,7 +226,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
     setTranscript('');
     setUserActivated(false);
     
-    // Clean up WebRTC resources
+    // Clean up WebRTC resources but keep media stream
     if (peerConnectionRef.current) {
       peerConnectionRef.current.close();
       peerConnectionRef.current = null;
@@ -207,19 +237,21 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
       dataChannelRef.current = null;
     }
 
-    if (mediaStreamRef.current) {
-      mediaStreamRef.current.getTracks().forEach(track => track.stop());
-      mediaStreamRef.current = null;
-    }
+    // Don't stop the media stream - keep it for reuse
+    // if (mediaStreamRef.current) {
+    //   mediaStreamRef.current.getTracks().forEach(track => track.stop());
+    //   mediaStreamRef.current = null;
+    // }
 
     if (audioElementRef.current) {
       audioElementRef.current.remove();
       audioElementRef.current = null;
     }
 
-    audioTrackRef.current = null;
+    // Don't reset audioTrackRef - keep it for reuse
+    // audioTrackRef.current = null;
 
-    console.log('Disconnected');
+    console.log('Disconnected (microphone permission preserved)');
   }, []);
 
   const handleServerEvent = useCallback((event: RealtimeEvent) => {
@@ -352,6 +384,12 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
   // Cleanup on unmount
   useEffect(() => {
     return () => {
+      // Only stop the media stream when the component unmounts
+      if (mediaStreamRef.current) {
+        mediaStreamRef.current.getTracks().forEach(track => track.stop());
+        mediaStreamRef.current = null;
+      }
+      audioTrackRef.current = null;
       disconnect();
     };
   }, [disconnect]);
@@ -368,5 +406,6 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
     stopListening,
     sendTextMessage,
     userActivated,
+    hasMicrophonePermission,
   };
 }; 
