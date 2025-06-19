@@ -20,7 +20,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
     transcript,
     error,
     connect,
-    disconnect,
     startListening,
     stopListening,
     sendTextMessage,
@@ -171,16 +170,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
                 <div className="w-8 h-8 bg-white/10 rounded-full" />
               </div>
               <p className="text-white/60 text-sm">
-                {isConnected ? 'Click the voice button to start' : 'Click the voice button to connect'}
+                Click the voice button to start a conversation
               </p>
-              {!isConnected && (
-                <button
-                  onClick={handleVoiceToggle}
-                  className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
-                >
-                  Connect
-                </button>
-              )}
             </div>
           </div>
         ) : (

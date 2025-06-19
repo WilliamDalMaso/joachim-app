@@ -42,7 +42,7 @@ app.post('/session', async (req, res) => {
       });
     }
 
-    const { model = 'gpt-4o-realtime-preview-2025-06-03', voice = 'verse' } = req.body;
+    const { model = 'gpt-4o-mini-realtime-preview-2024-12-17', voice = 'verse' } = req.body;
     
     console.log('Creating session with model:', model, 'voice:', voice);
     

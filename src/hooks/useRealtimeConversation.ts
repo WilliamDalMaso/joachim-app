@@ -2,7 +2,7 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 
 interface RealtimeEvent {
   type: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface UseRealtimeConversationReturn {
@@ -55,8 +55,8 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'gpt-4o-realtime-preview-2025-06-03',
-          voice: 'alloy',
+          model: 'gpt-4o-mini-realtime-preview-2024-12-17',
+          voice: 'verse',
         }),
       });
 
@@ -148,7 +148,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
       // Send offer to OpenAI
       console.log('Sending offer to OpenAI...');
       const baseUrl = 'https://api.openai.com/v1/realtime';
-      const model = 'gpt-4o-realtime-preview-2025-06-03';
+      const model = 'gpt-4o-mini-realtime-preview-2024-12-17';
       const sdpResponse = await fetch(`${baseUrl}?model=${model}`, {
         method: 'POST',
         body: offer.sdp,
@@ -246,12 +246,14 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
         }
         break;
       
-      case 'response.audio_transcript.delta':
-        if (event.delta?.text) {
-          console.log('Transcript delta:', event.delta.text);
-          setTranscript(prev => prev + event.delta.text);
+      case 'response.audio_transcript.delta': {
+        const delta = event.delta as { text?: string };
+        if (delta?.text) {
+          console.log('Transcript delta:', delta.text);
+          setTranscript(prev => prev + delta.text);
         }
         break;
+      }
       
       case 'response.audio_transcript.done':
         console.log('Transcript done');
@@ -269,10 +271,12 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
         }
         break;
       
-      case 'error':
+      case 'error': {
         console.error('Server error:', event);
-        setError(event.message || 'An error occurred');
+        const errorEvent = event as { message?: string };
+        setError(errorEvent.message || 'An error occurred');
         break;
+      }
     }
   }, [userActivated]);
 

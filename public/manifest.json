@@ -1,6 +1,6 @@
 {
-  "name": "AI Chat Assistant",
-  "short_name": "AI Chat",
+  "name": "English On The Go",
+  "short_name": "English On The Go",
   "description": "Modern AI chat interface with voice assistance",
   "start_url": "/",
   "display": "standalone",
