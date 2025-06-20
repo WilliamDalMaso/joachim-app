@@ -1,0 +1,352 @@
+[
+  {
+    "id": "c2_001",
+    "prompt": "The discourse analyses employ Foucauldian concepts of power/knowledge relations.",
+    "answer": "The discourse analyses employ Foucauldian concepts of power/knowledge relations.",
+    "difficulty": 5,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "c2_002",
+    "prompt": "Her hermeneutic interpretation reveals latent ideological structures.",
+    "answer": "Her hermeneutic interpretation reveals latent ideological structures.",
+    "difficulty": 5,
+    "category": "questions"
+  },
+  {
+    "id": "c2_003",
+    "prompt": "We modelled anomalous diffusion using fractional Brownian motion equations.",
+    "answer": "We modelled anomalous diffusion using fractional Brownian motion equations.",
+    "difficulty": 5,
+    "category": "family"
+  },
+  {
+    "id": "c2_004",
+    "prompt": "The paper critiques neoliberal frameworks as inherently exclusionary.",
+    "answer": "The paper critiques neoliberal frameworks as inherently exclusionary.",
+    "difficulty": 5,
+    "category": "colors"
+  },
+  {
+    "id": "c2_005",
+    "prompt": "She applied category theory to examine morphisms in abstract algebra.",
+    "answer": "She applied category theory to examine morphisms in abstract algebra.",
+    "difficulty": 5,
+    "category": "numbers"
+  },
+  {
+    "id": "c2_006",
+    "prompt": "Their findings engage with Derrida’s notion of différance.",
+    "answer": "Their findings engage with Derrida’s notion of différance.",
+    "difficulty": 5,
+    "category": "food"
+  },
+  {
+    "id": "c2_007",
+    "prompt": "The geospatial algorithm integrates LIDAR and multispectral imaging data.",
+    "answer": "The geospatial algorithm integrates LIDAR and multispectral imaging data.",
+    "difficulty": 5,
+    "category": "weather"
+  },
+  {
+    "id": "c2_008",
+    "prompt": "We invoked Gödel’s incompleteness theorems to challenge formalist assumptions.",
+    "answer": "We invoked Gödel’s incompleteness theorems to challenge formalist assumptions.",
+    "difficulty": 5,
+    "category": "transportation"
+  },
+  {
+    "id": "c2_009",
+    "prompt": "He synthesised Raman spectroscopy with atomic force microscopy measurements.",
+    "answer": "He synthesised Raman spectroscopy with atomic force microscopy measurements.",
+    "difficulty": 5,
+    "category": "work"
+  },
+  {
+    "id": "c2_010",
+    "prompt": "The critique deconstructs hegemonic narratives in postcolonial literature.",
+    "answer": "The critique deconstructs hegemonic narratives in postcolonial literature.",
+    "difficulty": 5,
+    "category": "school"
+  },
+  {
+    "id": "c2_011",
+    "prompt": "We formulated a Lagrangian density to describe gauge field interactions.",
+    "answer": "We formulated a Lagrangian density to describe gauge field interactions.",
+    "difficulty": 5,
+    "category": "hobbies"
+  },
+  {
+    "id": "c2_012",
+    "prompt": "Her exegesis of hermeneutic phenomenology foregrounds embodied experience.",
+    "answer": "Her exegesis of hermeneutic phenomenology foregrounds embodied experience.",
+    "difficulty": 5,
+    "category": "travel"
+  },
+  {
+    "id": "c2_013",
+    "prompt": "They examined entropy production in non-equilibrium thermodynamic systems.",
+    "answer": "They examined entropy production in non-equilibrium thermodynamic systems.",
+    "difficulty": 5,
+    "category": "shopping"
+  },
+  {
+    "id": "c2_014",
+    "prompt": "The argument invokes a Foucauldian genealogy of disciplinary mechanisms.",
+    "answer": "The argument invokes a Foucauldian genealogy of disciplinary mechanisms.",
+    "difficulty": 5,
+    "category": "health"
+  },
+  {
+    "id": "c2_015",
+    "prompt": "We employed spectral clustering to identify community structures in networks.",
+    "answer": "We employed spectral clustering to identify community structures in networks.",
+    "difficulty": 5,
+    "category": "time"
+  },
+  {
+    "id": "c2_016",
+    "prompt": "Her exposition on logico-syntactic rules enhanced the formal grammar analysis.",
+    "answer": "Her exposition on logico-syntactic rules enhanced the formal grammar analysis.",
+    "difficulty": 5,
+    "category": "directions"
+  },
+  {
+    "id": "c2_017",
+    "prompt": "The study advances post-structuralist critiques of subjectivity and agency.",
+    "answer": "The study advances post-structuralist critiques of subjectivity and agency.",
+    "difficulty": 5,
+    "category": "emotions"
+  },
+  {
+    "id": "c2_018",
+    "prompt": "We modelled phase transitions via renormalization group techniques.",
+    "answer": "We modelled phase transitions via renormalization group techniques.",
+    "difficulty": 5,
+    "category": "abilities"
+  },
+  {
+    "id": "c2_019",
+    "prompt": "Her treatise interrogates the ontology of digital virtuality.",
+    "answer": "Her treatise interrogates the ontology of digital virtuality.",
+    "difficulty": 5,
+    "category": "preferences"
+  },
+  {
+    "id": "c2_020",
+    "prompt": "They derived the Navier–Stokes equations under compressible flow conditions.",
+    "answer": "They derived the Navier–Stokes equations under compressible flow conditions.",
+    "difficulty": 5,
+    "category": "daily_routine"
+  },
+  {
+    "id": "c2_021",
+    "prompt": "The methodology employs wavelet transforms for signal denoising.",
+    "answer": "The methodology employs wavelet transforms for signal denoising.",
+    "difficulty": 5,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "c2_022",
+    "prompt": "Our discourse critique situates media representations within biopolitical contexts.",
+    "answer": "Our discourse critique situates media representations within biopolitical contexts.",
+    "difficulty": 5,
+    "category": "questions"
+  },
+  {
+    "id": "c2_023",
+    "prompt": "She explored cohomological invariants in complex manifold theory.",
+    "answer": "She explored cohomological invariants in complex manifold theory.",
+    "difficulty": 5,
+    "category": "family"
+  },
+  {
+    "id": "c2_024",
+    "prompt": "He formulated an econometric model using vector autoregression.",
+    "answer": "He formulated an econometric model using vector autoregression.",
+    "difficulty": 5,
+    "category": "colors"
+  },
+  {
+    "id": "c2_025",
+    "prompt": "The analysis foregrounds semiotic signification in visual culture.",
+    "answer": "The analysis foregrounds semiotic signification in visual culture.",
+    "difficulty": 5,
+    "category": "numbers"
+  },
+  {
+    "id": "c2_026",
+    "prompt": "We investigated synchrotron radiation for high-resolution imaging.",
+    "answer": "We investigated synchrotron radiation for high-resolution imaging.",
+    "difficulty": 5,
+    "category": "food"
+  },
+  {
+    "id": "c2_027",
+    "prompt": "Her dissertation scrutinises the dialectical tension between liberty and security.",
+    "answer": "Her dissertation scrutinises the dialectical tension between liberty and security.",
+    "difficulty": 5,
+    "category": "weather"
+  },
+  {
+    "id": "c2_028",
+    "prompt": "They adopted a Monte Carlo simulation to estimate risk distributions.",
+    "answer": "They adopted a Monte Carlo simulation to estimate risk distributions.",
+    "difficulty": 5,
+    "category": "transportation"
+  },
+  {
+    "id": "c2_029",
+    "prompt": "He critiqued the metaphysical assumptions of classical realism.",
+    "answer": "He critiqued the metaphysical assumptions of classical realism.",
+    "difficulty": 5,
+    "category": "work"
+  },
+  {
+    "id": "c2_030",
+    "prompt": "The research interrogates teleological frameworks in evolutionary theory.",
+    "answer": "The research interrogates teleological frameworks in evolutionary theory.",
+    "difficulty": 5,
+    "category": "school"
+  },
+  {
+    "id": "c2_031",
+    "prompt": "We applied renyi entropy measures to gauge distribution heterogeneity.",
+    "answer": "We applied renyi entropy measures to gauge distribution heterogeneity.",
+    "difficulty": 5,
+    "category": "hobbies"
+  },
+  {
+    "id": "c2_032",
+    "prompt": "Her monograph problematizes the concept of cultural capital in neoliberal contexts.",
+    "answer": "Her monograph problematizes the concept of cultural capital in neoliberal contexts.",
+    "difficulty": 5,
+    "category": "travel"
+  },
+  {
+    "id": "c2_033",
+    "prompt": "They employed Koopman operator theory for nonlinear dynamical analysis.",
+    "answer": "They employed Koopman operator theory for nonlinear dynamical analysis.",
+    "difficulty": 5,
+    "category": "shopping"
+  },
+  {
+    "id": "c2_034",
+    "prompt": "The critique addresses the telegraphic style of early modernist manifestos.",
+    "answer": "The critique addresses the telegraphic style of early modernist manifestos.",
+    "difficulty": 5,
+    "category": "health"
+  },
+  {
+    "id": "c2_035",
+    "prompt": "We conducted polarized neutron reflectometry to probe interface magnetism.",
+    "answer": "We conducted polarized neutron reflectometry to probe interface magnetism.",
+    "difficulty": 5,
+    "category": "time"
+  },
+  {
+    "id": "c2_036",
+    "prompt": "Her analysis employs hypergraph representations of semantic networks.",
+    "answer": "Her analysis employs hypergraph representations of semantic networks.",
+    "difficulty": 5,
+    "category": "directions"
+  },
+  {
+    "id": "c2_037",
+    "prompt": "They modelled population genetics using coalescent theory algorithms.",
+    "answer": "They modelled population genetics using coalescent theory algorithms.",
+    "difficulty": 5,
+    "category": "emotions"
+  },
+  {
+    "id": "c2_038",
+    "prompt": "The paper advances decolonial praxis within anthropological scholarship.",
+    "answer": "The paper advances decolonial praxis within anthropological scholarship.",
+    "difficulty": 5,
+    "category": "abilities"
+  },
+  {
+    "id": "c2_039",
+    "prompt": "We integrated topological data analysis for robust pattern detection.",
+    "answer": "We integrated topological data analysis for robust pattern detection.",
+    "difficulty": 5,
+    "category": "preferences"
+  },
+  {
+    "id": "c2_040",
+    "prompt": "Her framework synthesises actor–network theory with postphenomenology.",
+    "answer": "Her framework synthesises actor–network theory with postphenomenology.",
+    "difficulty": 5,
+    "category": "daily_routine"
+  },
+  {
+    "id": "c2_041",
+    "prompt": "They reconstructed paleoclimatic records from ice-core stratigraphy.",
+    "answer": "They reconstructed paleoclimatic records from ice-core stratigraphy.",
+    "difficulty": 5,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "c2_042",
+    "prompt": "He operationalised emergence through agent-based computational models.",
+    "answer": "He operationalised emergence through agent-based computational models.",
+    "difficulty": 5,
+    "category": "questions"
+  },
+  {
+    "id": "c2_043",
+    "prompt": "The investigation adopts a Foucauldian archaeological approach to archival materials.",
+    "answer": "The investigation adopts a Foucauldian archaeological approach to archival materials.",
+    "difficulty": 5,
+    "category": "family"
+  },
+  {
+    "id": "c2_044",
+    "prompt": "We quantified trophic interactions using stable isotope ratio analysis.",
+    "answer": "We quantified trophic interactions using stable isotope ratio analysis.",
+    "difficulty": 5,
+    "category": "colors"
+  },
+  {
+    "id": "c2_045",
+    "prompt": "Her critique problematises the notion of algorithmic objectivity.",
+    "answer": "Her critique problematises the notion of algorithmic objectivity.",
+    "difficulty": 5,
+    "category": "numbers"
+  },
+  {
+    "id": "c2_046",
+    "prompt": "They employed homotopy continuation methods for solving polynomial systems.",
+    "answer": "They employed homotopy continuation methods for solving polynomial systems.",
+    "difficulty": 5,
+    "category": "food"
+  },
+  {
+    "id": "c2_047",
+    "prompt": "The study elucidates quantum decoherence in mesoscopic systems.",
+    "answer": "The study elucidates quantum decoherence in mesoscopic systems.",
+    "difficulty": 5,
+    "category": "weather"
+  },
+  {
+    "id": "c2_048",
+    "prompt": "We critique the axiomatic foundations of set theory in light of paradoxes.",
+    "answer": "We critique the axiomatic foundations of set theory in light of paradoxes.",
+    "difficulty": 5,
+    "category": "transportation"
+  },
+  {
+    "id": "c2_049",
+    "prompt": "Her praxis integrates feminist standpoint theory with participatory methods.",
+    "answer": "Her praxis integrates feminist standpoint theory with participatory methods.",
+    "difficulty": 5,
+    "category": "work"
+  },
+  {
+    "id": "c2_050",
+    "prompt": "They modelled cosmological inflation using scalar field potentials.",
+    "answer": "They modelled cosmological inflation using scalar field potentials.",
+    "difficulty": 5,
+    "category": "school"
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "id": "b2_001",
+    "prompt": "The proposal was rejected due to insufficient evidence.",
+    "answer": "The proposal was rejected due to insufficient evidence.",
+    "difficulty": 4,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "b2_002",
+    "prompt": "Had I realized the meeting was canceled, I wouldn’t have gone.",
+    "answer": "Had I realized the meeting was canceled, I wouldn’t have gone.",
+    "difficulty": 4,
+    "category": "questions"
+  },
+  {
+    "id": "b2_003",
+    "prompt": "She had been hoping for a promotion before the department restructuring.",
+    "answer": "She had been hoping for a promotion before the department restructuring.",
+    "difficulty": 4,
+    "category": "family"
+  },
+  {
+    "id": "b2_004",
+    "prompt": "They’re being criticized for overlooking important safety protocols.",
+    "answer": "They’re being criticized for overlooking important safety protocols.",
+    "difficulty": 4,
+    "category": "colors"
+  },
+  {
+    "id": "b2_005",
+    "prompt": "Despite the CEO’s assurances, investors remained skeptical.",
+    "answer": "Despite the CEO’s assurances, investors remained skeptical.",
+    "difficulty": 4,
+    "category": "numbers"
+  },
+  {
+    "id": "b2_006",
+    "prompt": "The novelist’s latest work delves into the complexities of identity.",
+    "answer": "The novelist’s latest work delves into the complexities of identity.",
+    "difficulty": 4,
+    "category": "food"
+  },
+  {
+    "id": "b2_007",
+    "prompt": "By adopting renewable energy sources, many countries have reduced emissions.",
+    "answer": "By adopting renewable energy sources, many countries have reduced emissions.",
+    "difficulty": 4,
+    "category": "weather"
+  },
+  {
+    "id": "b2_008",
+    "prompt": "If you encounter any issues, please don’t hesitate to consult the manual.",
+    "answer": "If you encounter any issues, please don’t hesitate to consult the manual.",
+    "difficulty": 4,
+    "category": "transportation"
+  },
+  {
+    "id": "b2_009",
+    "prompt": "She’s been volunteering at the shelter for over five years now.",
+    "answer": "She’s been volunteering at the shelter for over five years now.",
+    "difficulty": 4,
+    "category": "work"
+  },
+  {
+    "id": "b2_010",
+    "prompt": "The documentary highlighted challenges faced by urban communities.",
+    "answer": "The documentary highlighted challenges faced by urban communities.",
+    "difficulty": 4,
+    "category": "school"
+  },
+  {
+    "id": "b2_011",
+    "prompt": "I would have appreciated more context before making my decision.",
+    "answer": "I would have appreciated more context before making my decision.",
+    "difficulty": 4,
+    "category": "hobbies"
+  },
+  {
+    "id": "b2_012",
+    "prompt": "He’s been struggling to reconcile his career ambitions with family life.",
+    "answer": "He’s been struggling to reconcile his career ambitions with family life.",
+    "difficulty": 4,
+    "category": "travel"
+  },
+  {
+    "id": "b2_013",
+    "prompt": "Were they to announce a merger, stock prices would likely surge.",
+    "answer": "Were they to announce a merger, stock prices would likely surge.",
+    "difficulty": 4,
+    "category": "shopping"
+  },
+  {
+    "id": "b2_014",
+    "prompt": "The committee was divided over the proposed budget cuts.",
+    "answer": "The committee was divided over the proposed budget cuts.",
+    "difficulty": 4,
+    "category": "health"
+  },
+  {
+    "id": "b2_015",
+    "prompt": "I’m accustomed to juggling multiple responsibilities at once.",
+    "answer": "I’m accustomed to juggling multiple responsibilities at once.",
+    "difficulty": 4,
+    "category": "time"
+  },
+  {
+    "id": "b2_016",
+    "prompt": "They claimed to have implemented all suggested improvements.",
+    "answer": "They claimed to have implemented all suggested improvements.",
+    "difficulty": 4,
+    "category": "directions"
+  },
+  {
+    "id": "b2_017",
+    "prompt": "She’s inquired about the possibility of extending her contract.",
+    "answer": "She’s inquired about the possibility of extending her contract.",
+    "difficulty": 4,
+    "category": "emotions"
+  },
+  {
+    "id": "b2_018",
+    "prompt": "The study reveals significant correlations between diet and mood.",
+    "answer": "The study reveals significant correlations between diet and mood.",
+    "difficulty": 4,
+    "category": "abilities"
+  },
+  {
+    "id": "b2_019",
+    "prompt": "Had the team prepared more thoroughly, they might have won.",
+    "answer": "Had the team prepared more thoroughly, they might have won.",
+    "difficulty": 4,
+    "category": "preferences"
+  },
+  {
+    "id": "b2_020",
+    "prompt": "He’s been grappling with complex ethical dilemmas at work.",
+    "answer": "He’s been grappling with complex ethical dilemmas at work.",
+    "difficulty": 4,
+    "category": "daily_routine"
+  },
+  {
+    "id": "b2_021",
+    "prompt": "The marketing campaign failed to generate the expected interest.",
+    "answer": "The marketing campaign failed to generate the expected interest.",
+    "difficulty": 4,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "b2_022",
+    "prompt": "I would recommend revising the report before submission.",
+    "answer": "I would recommend revising the report before submission.",
+    "difficulty": 4,
+    "category": "questions"
+  },
+  {
+    "id": "b2_023",
+    "prompt": "They’re exploring innovative approaches to waste management.",
+    "answer": "They’re exploring innovative approaches to waste management.",
+    "difficulty": 4,
+    "category": "family"
+  },
+  {
+    "id": "b2_024",
+    "prompt": "By the end of the semester, I had mastered several advanced techniques.",
+    "answer": "By the end of the semester, I had mastered several advanced techniques.",
+    "difficulty": 4,
+    "category": "colors"
+  },
+  {
+    "id": "b2_025",
+    "prompt": "The government’s policy shift prompted widespread debate.",
+    "answer": "The government’s policy shift prompted widespread debate.",
+    "difficulty": 4,
+    "category": "numbers"
+  },
+  {
+    "id": "b2_026",
+    "prompt": "If circumstances had been different, we might have collaborated sooner.",
+    "answer": "If circumstances had been different, we might have collaborated sooner.",
+    "difficulty": 4,
+    "category": "food"
+  },
+  {
+    "id": "b2_027",
+    "prompt": "She’s developed a reputation for delivering high-quality work.",
+    "answer": "She’s developed a reputation for delivering high-quality work.",
+    "difficulty": 4,
+    "category": "weather"
+  },
+  {
+    "id": "b2_028",
+    "prompt": "I’ve been advised to diversify my investment portfolio.",
+    "answer": "I’ve been advised to diversify my investment portfolio.",
+    "difficulty": 4,
+    "category": "transportation"
+  },
+  {
+    "id": "b2_029",
+    "prompt": "The experiment was conducted under strictly controlled conditions.",
+    "answer": "The experiment was conducted under strictly controlled conditions.",
+    "difficulty": 4,
+    "category": "work"
+  },
+  {
+    "id": "b2_030",
+    "prompt": "They underestimated the complexity of the regulatory framework.",
+    "answer": "They underestimated the complexity of the regulatory framework.",
+    "difficulty": 4,
+    "category": "school"
+  },
+  {
+    "id": "b2_031",
+    "prompt": "I’m aiming to broaden my horizons by learning a new language.",
+    "answer": "I’m aiming to broaden my horizons by learning a new language.",
+    "difficulty": 4,
+    "category": "hobbies"
+  },
+  {
+    "id": "b2_032",
+    "prompt": "She admitted that she had overlooked several key details.",
+    "answer": "She admitted that she had overlooked several key details.",
+    "difficulty": 4,
+    "category": "travel"
+  },
+  {
+    "id": "b2_033",
+    "prompt": "They’ve secured funding for the next phase of development.",
+    "answer": "They’ve secured funding for the next phase of development.",
+    "difficulty": 4,
+    "category": "shopping"
+  },
+  {
+    "id": "b2_034",
+    "prompt": "By examining the data closely, patterns became evident.",
+    "answer": "By examining the data closely, patterns became evident.",
+    "difficulty": 4,
+    "category": "health"
+  },
+  {
+    "id": "b2_035",
+    "prompt": "Had we consulted the experts earlier, we would have avoided mistakes.",
+    "answer": "Had we consulted the experts earlier, we would have avoided mistakes.",
+    "difficulty": 4,
+    "category": "time"
+  },
+  {
+    "id": "b2_036",
+    "prompt": "The new regulations will come into effect next January.",
+    "answer": "The new regulations will come into effect next January.",
+    "difficulty": 4,
+    "category": "directions"
+  },
+  {
+    "id": "b2_037",
+    "prompt": "I’ve compiled a comprehensive list of recommended readings.",
+    "answer": "I’ve compiled a comprehensive list of recommended readings.",
+    "difficulty": 4,
+    "category": "emotions"
+  },
+  {
+    "id": "b2_038",
+    "prompt": "They’ve been negotiating a joint venture with a foreign partner.",
+    "answer": "They’ve been negotiating a joint venture with a foreign partner.",
+    "difficulty": 4,
+    "category": "abilities"
+  },
+  {
+    "id": "b2_039",
+    "prompt": "She reluctantly agreed to participate in the panel discussion.",
+    "answer": "She reluctantly agreed to participate in the panel discussion.",
+    "difficulty": 4,
+    "category": "preferences"
+  },
+  {
+    "id": "b2_040",
+    "prompt": "The survey results suggest a shift in public opinion.",
+    "answer": "The survey results suggest a shift in public opinion.",
+    "difficulty": 4,
+    "category": "daily_routine"
+  },
+  {
+    "id": "b2_041",
+    "prompt": "He’s determined to overcome the obstacles in his path.",
+    "answer": "He’s determined to overcome the obstacles in his path.",
+    "difficulty": 4,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "b2_042",
+    "prompt": "I would like to inquire about potential collaboration opportunities.",
+    "answer": "I would like to inquire about potential collaboration opportunities.",
+    "difficulty": 4,
+    "category": "questions"
+  },
+  {
+    "id": "b2_043",
+    "prompt": "They’re drafting a proposal to address the funding shortfall.",
+    "answer": "They’re drafting a proposal to address the funding shortfall.",
+    "difficulty": 4,
+    "category": "family"
+  },
+  {
+    "id": "b2_044",
+    "prompt": "She’s been recognized for her contributions to environmental research.",
+    "answer": "She’s been recognized for her contributions to environmental research.",
+    "difficulty": 4,
+    "category": "colors"
+  },
+  {
+    "id": "b2_045",
+    "prompt": "By leveraging modern technology, processes can be automated.",
+    "answer": "By leveraging modern technology, processes can be automated.",
+    "difficulty": 4,
+    "category": "numbers"
+  },
+  {
+    "id": "b2_046",
+    "prompt": "Had the software been more user-friendly, adoption would have been faster.",
+    "answer": "Had the software been more user-friendly, adoption would have been faster.",
+    "difficulty": 4,
+    "category": "food"
+  },
+  {
+    "id": "b2_047",
+    "prompt": "They’ve encountered unexpected resistance from stakeholders.",
+    "answer": "They’ve encountered unexpected resistance from stakeholders.",
+    "difficulty": 4,
+    "category": "weather"
+  },
+  {
+    "id": "b2_048",
+    "prompt": "I’m debating whether to postpone the launch until next quarter.",
+    "answer": "I’m debating whether to postpone the launch until next quarter.",
+    "difficulty": 4,
+    "category": "transportation"
+  },
+  {
+    "id": "b2_049",
+    "prompt": "She’s successfully completed a series of advanced workshops.",
+    "answer": "She’s successfully completed a series of advanced workshops.",
+    "difficulty": 4,
+    "category": "work"
+  },
+  {
+    "id": "b2_050",
+    "prompt": "The investigation uncovered a number of systemic flaws.",
+    "answer": "The investigation uncovered a number of systemic flaws.",
+    "difficulty": 4,
+    "category": "school"
+  }
+]

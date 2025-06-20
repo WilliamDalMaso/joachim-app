@@ -11,62 +11,342 @@
     "prompt": "This is my friend.",
     "answer": "This is my friend.",
     "difficulty": 1,
-    "category": "basic_phrases"
+    "category": "questions"
   },
   {
     "id": "a1_003",
-    "prompt": "What is your name?",
-    "answer": "What is your name?",
+    "prompt": "I like apples.",
+    "answer": "I like apples.",
     "difficulty": 1,
-    "category": "questions"
+    "category": "family"
   },
   {
     "id": "a1_004",
-    "prompt": "I like coffee.",
-    "answer": "I like coffee.",
+    "prompt": "He is my brother.",
+    "answer": "He is my brother.",
     "difficulty": 1,
-    "category": "preferences"
+    "category": "colors"
   },
   {
     "id": "a1_005",
-    "prompt": "Where do you live?",
-    "answer": "Where do you live?",
+    "prompt": "She has a blue bag.",
+    "answer": "She has a blue bag.",
     "difficulty": 1,
-    "category": "questions"
+    "category": "numbers"
   },
   {
     "id": "a1_006",
-    "prompt": "The weather is nice today.",
-    "answer": "The weather is nice today.",
+    "prompt": "We live in London.",
+    "answer": "We live in London.",
+    "difficulty": 1,
+    "category": "food"
+  },
+  {
+    "id": "a1_007",
+    "prompt": "It is a sunny day.",
+    "answer": "It is a sunny day.",
     "difficulty": 1,
     "category": "weather"
   },
   {
-    "id": "a1_007",
-    "prompt": "I work in an office.",
-    "answer": "I work in an office.",
+    "id": "a1_008",
+    "prompt": "I want some water.",
+    "answer": "I want some water.",
+    "difficulty": 1,
+    "category": "transportation"
+  },
+  {
+    "id": "a1_009",
+    "prompt": "They play football.",
+    "answer": "They play football.",
     "difficulty": 1,
     "category": "work"
   },
   {
-    "id": "a1_008",
-    "prompt": "Do you speak English?",
-    "answer": "Do you speak English?",
+    "id": "a1_010",
+    "prompt": "Do you like music?",
+    "answer": "Do you like music?",
+    "difficulty": 1,
+    "category": "school"
+  },
+  {
+    "id": "a1_011",
+    "prompt": "Yes, I do.",
+    "answer": "Yes, I do.",
+    "difficulty": 1,
+    "category": "hobbies"
+  },
+  {
+    "id": "a1_012",
+    "prompt": "No, I don’t.",
+    "answer": "No, I don’t.",
+    "difficulty": 1,
+    "category": "travel"
+  },
+  {
+    "id": "a1_013",
+    "prompt": "What is your name?",
+    "answer": "What is your name?",
+    "difficulty": 1,
+    "category": "shopping"
+  },
+  {
+    "id": "a1_014",
+    "prompt": "My name is Anna.",
+    "answer": "My name is Anna.",
+    "difficulty": 1,
+    "category": "health"
+  },
+  {
+    "id": "a1_015",
+    "prompt": "Where are you from?",
+    "answer": "Where are you from?",
+    "difficulty": 1,
+    "category": "time"
+  },
+  {
+    "id": "a1_016",
+    "prompt": "I am from Spain.",
+    "answer": "I am from Spain.",
+    "difficulty": 1,
+    "category": "directions"
+  },
+  {
+    "id": "a1_017",
+    "prompt": "How old are you?",
+    "answer": "How old are you?",
+    "difficulty": 1,
+    "category": "emotions"
+  },
+  {
+    "id": "a1_018",
+    "prompt": "I am twenty years old.",
+    "answer": "I am twenty years old.",
+    "difficulty": 1,
+    "category": "abilities"
+  },
+  {
+    "id": "a1_019",
+    "prompt": "What is this?",
+    "answer": "What is this?",
+    "difficulty": 1,
+    "category": "preferences"
+  },
+  {
+    "id": "a1_020",
+    "prompt": "This is a pencil.",
+    "answer": "This is a pencil.",
+    "difficulty": 1,
+    "category": "daily_routine"
+  },
+  {
+    "id": "a1_021",
+    "prompt": "I need a pen.",
+    "answer": "I need a pen.",
+    "difficulty": 1,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "a1_022",
+    "prompt": "The book is on the table.",
+    "answer": "The book is on the table.",
     "difficulty": 1,
     "category": "questions"
   },
   {
-    "id": "a1_009",
-    "prompt": "I want to learn English.",
-    "answer": "I want to learn English.",
+    "id": "a1_023",
+    "prompt": "Open the door, please.",
+    "answer": "Open the door, please.",
     "difficulty": 1,
-    "category": "learning"
+    "category": "family"
   },
   {
-    "id": "a1_010",
-    "prompt": "Thank you very much.",
-    "answer": "Thank you very much.",
+    "id": "a1_024",
+    "prompt": "Close the window.",
+    "answer": "Close the window.",
     "difficulty": 1,
-    "category": "courtesy"
+    "category": "colors"
+  },
+  {
+    "id": "a1_025",
+    "prompt": "I have two brothers.",
+    "answer": "I have two brothers.",
+    "difficulty": 1,
+    "category": "numbers"
+  },
+  {
+    "id": "a1_026",
+    "prompt": "She loves chocolate.",
+    "answer": "She loves chocolate.",
+    "difficulty": 1,
+    "category": "food"
+  },
+  {
+    "id": "a1_027",
+    "prompt": "We go to school by bus.",
+    "answer": "We go to school by bus.",
+    "difficulty": 1,
+    "category": "weather"
+  },
+  {
+    "id": "a1_028",
+    "prompt": "He watches TV every day.",
+    "answer": "He watches TV every day.",
+    "difficulty": 1,
+    "category": "transportation"
+  },
+  {
+    "id": "a1_029",
+    "prompt": "They eat lunch at noon.",
+    "answer": "They eat lunch at noon.",
+    "difficulty": 1,
+    "category": "work"
+  },
+  {
+    "id": "a1_030",
+    "prompt": "I like to read books.",
+    "answer": "I like to read books.",
+    "difficulty": 1,
+    "category": "school"
+  },
+  {
+    "id": "a1_031",
+    "prompt": "This chair is old.",
+    "answer": "This chair is old.",
+    "difficulty": 1,
+    "category": "hobbies"
+  },
+  {
+    "id": "a1_032",
+    "prompt": "My mother is here.",
+    "answer": "My mother is here.",
+    "difficulty": 1,
+    "category": "travel"
+  },
+  {
+    "id": "a1_033",
+    "prompt": "Your shoes are nice.",
+    "answer": "Your shoes are nice.",
+    "difficulty": 1,
+    "category": "shopping"
+  },
+  {
+    "id": "a1_034",
+    "prompt": "We are happy.",
+    "answer": "We are happy.",
+    "difficulty": 1,
+    "category": "health"
+  },
+  {
+    "id": "a1_035",
+    "prompt": "He is sad.",
+    "answer": "He is sad.",
+    "difficulty": 1,
+    "category": "time"
+  },
+  {
+    "id": "a1_036",
+    "prompt": "I can swim.",
+    "answer": "I can swim.",
+    "difficulty": 1,
+    "category": "directions"
+  },
+  {
+    "id": "a1_037",
+    "prompt": "She can sing.",
+    "answer": "She can sing.",
+    "difficulty": 1,
+    "category": "emotions"
+  },
+  {
+    "id": "a1_038",
+    "prompt": "Do you speak English?",
+    "answer": "Do you speak English?",
+    "difficulty": 1,
+    "category": "abilities"
+  },
+  {
+    "id": "a1_039",
+    "prompt": "Yes, a little.",
+    "answer": "Yes, a little.",
+    "difficulty": 1,
+    "category": "preferences"
+  },
+  {
+    "id": "a1_040",
+    "prompt": "No, I don’t understand.",
+    "answer": "No, I don’t understand.",
+    "difficulty": 1,
+    "category": "daily_routine"
+  },
+  {
+    "id": "a1_041",
+    "prompt": "What time is it?",
+    "answer": "What time is it?",
+    "difficulty": 1,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "a1_042",
+    "prompt": "It is six o’clock.",
+    "answer": "It is six o’clock.",
+    "difficulty": 1,
+    "category": "questions"
+  },
+  {
+    "id": "a1_043",
+    "prompt": "Where is the school?",
+    "answer": "Where is the school?",
+    "difficulty": 1,
+    "category": "family"
+  },
+  {
+    "id": "a1_044",
+    "prompt": "The cat is under the bed.",
+    "answer": "The cat is under the bed.",
+    "difficulty": 1,
+    "category": "colors"
+  },
+  {
+    "id": "a1_045",
+    "prompt": "I like my new phone.",
+    "answer": "I like my new phone.",
+    "difficulty": 1,
+    "category": "numbers"
+  },
+  {
+    "id": "a1_046",
+    "prompt": "He drives a car.",
+    "answer": "He drives a car.",
+    "difficulty": 1,
+    "category": "food"
+  },
+  {
+    "id": "a1_047",
+    "prompt": "She has three apples.",
+    "answer": "She has three apples.",
+    "difficulty": 1,
+    "category": "weather"
+  },
+  {
+    "id": "a1_048",
+    "prompt": "We play in the park.",
+    "answer": "We play in the park.",
+    "difficulty": 1,
+    "category": "transportation"
+  },
+  {
+    "id": "a1_049",
+    "prompt": "They live near me.",
+    "answer": "They live near me.",
+    "difficulty": 1,
+    "category": "work"
+  },
+  {
+    "id": "a1_050",
+    "prompt": "I am a student.",
+    "answer": "I am a student.",
+    "difficulty": 1,
+    "category": "school"
   }
-] 
+]

@@ -1,72 +1,352 @@
 [
   {
     "id": "a2_001",
-    "prompt": "I would like to order a pizza.",
-    "answer": "I would like to order a pizza.",
+    "prompt": "I've visited my grandparents in the countryside.",
+    "answer": "I've visited my grandparents in the countryside.",
     "difficulty": 2,
-    "category": "food_ordering"
+    "category": "basic_phrases"
   },
   {
     "id": "a2_002",
-    "prompt": "Can you help me with this?",
-    "answer": "Can you help me with this?",
-    "difficulty": 2,
-    "category": "requests"
-  },
-  {
-    "id": "a2_003",
-    "prompt": "I have been studying English for two years.",
-    "answer": "I have been studying English for two years.",
-    "difficulty": 2,
-    "category": "experience"
-  },
-  {
-    "id": "a2_004",
-    "prompt": "What time does the movie start?",
-    "answer": "What time does the movie start?",
+    "prompt": "She didn't understand the instructions.",
+    "answer": "She didn't understand the instructions.",
     "difficulty": 2,
     "category": "questions"
   },
   {
+    "id": "a2_003",
+    "prompt": "They will arrive at the airport at noon.",
+    "answer": "They will arrive at the airport at noon.",
+    "difficulty": 2,
+    "category": "family"
+  },
+  {
+    "id": "a2_004",
+    "prompt": "Could you recommend a good restaurant?",
+    "answer": "Could you recommend a good restaurant?",
+    "difficulty": 2,
+    "category": "colors"
+  },
+  {
     "id": "a2_005",
-    "prompt": "I think it's going to rain tomorrow.",
-    "answer": "I think it's going to rain tomorrow.",
+    "prompt": "He has already finished his homework.",
+    "answer": "He has already finished his homework.",
+    "difficulty": 2,
+    "category": "numbers"
+  },
+  {
+    "id": "a2_006",
+    "prompt": "We're planning a surprise party for her.",
+    "answer": "We're planning a surprise party for her.",
+    "difficulty": 2,
+    "category": "food"
+  },
+  {
+    "id": "a2_007",
+    "prompt": "I prefer tea to coffee in the morning.",
+    "answer": "I prefer tea to coffee in the morning.",
     "difficulty": 2,
     "category": "weather"
   },
   {
-    "id": "a2_006",
-    "prompt": "Could you repeat that, please?",
-    "answer": "Could you repeat that, please?",
+    "id": "a2_008",
+    "prompt": "She forgot to bring her passport.",
+    "answer": "She forgot to bring her passport.",
     "difficulty": 2,
-    "category": "requests"
+    "category": "transportation"
   },
   {
-    "id": "a2_007",
-    "prompt": "I'm looking for a good restaurant.",
-    "answer": "I'm looking for a good restaurant.",
+    "id": "a2_009",
+    "prompt": "We decided to take a break.",
+    "answer": "We decided to take a break.",
+    "difficulty": 2,
+    "category": "work"
+  },
+  {
+    "id": "a2_010",
+    "prompt": "He borrowed a book from the library.",
+    "answer": "He borrowed a book from the library.",
+    "difficulty": 2,
+    "category": "school"
+  },
+  {
+    "id": "a2_011",
+    "prompt": "Please switch off the lights before leaving.",
+    "answer": "Please switch off the lights before leaving.",
+    "difficulty": 2,
+    "category": "hobbies"
+  },
+  {
+    "id": "a2_012",
+    "prompt": "They canceled the meeting due to rain.",
+    "answer": "They canceled the meeting due to rain.",
     "difficulty": 2,
     "category": "travel"
   },
   {
-    "id": "a2_008",
-    "prompt": "How long have you lived here?",
-    "answer": "How long have you lived here?",
+    "id": "a2_013",
+    "prompt": "Have you ever tried sushi?",
+    "answer": "Have you ever tried sushi?",
+    "difficulty": 2,
+    "category": "shopping"
+  },
+  {
+    "id": "a2_014",
+    "prompt": "I'm learning how to play the guitar.",
+    "answer": "I'm learning how to play the guitar.",
+    "difficulty": 2,
+    "category": "health"
+  },
+  {
+    "id": "a2_015",
+    "prompt": "She practiced speaking every day.",
+    "answer": "She practiced speaking every day.",
+    "difficulty": 2,
+    "category": "time"
+  },
+  {
+    "id": "a2_016",
+    "prompt": "He was born in a small town.",
+    "answer": "He was born in a small town.",
+    "difficulty": 2,
+    "category": "directions"
+  },
+  {
+    "id": "a2_017",
+    "prompt": "They postponed the trip until next month.",
+    "answer": "They postponed the trip until next month.",
+    "difficulty": 2,
+    "category": "emotions"
+  },
+  {
+    "id": "a2_018",
+    "prompt": "Can I pay by credit card?",
+    "answer": "Can I pay by credit card?",
+    "difficulty": 2,
+    "category": "abilities"
+  },
+  {
+    "id": "a2_019",
+    "prompt": "We enjoyed watching the performance.",
+    "answer": "We enjoyed watching the performance.",
+    "difficulty": 2,
+    "category": "preferences"
+  },
+  {
+    "id": "a2_020",
+    "prompt": "She agreed to help me with the project.",
+    "answer": "She agreed to help me with the project.",
+    "difficulty": 2,
+    "category": "daily_routine"
+  },
+  {
+    "id": "a2_021",
+    "prompt": "He's thinking about changing jobs.",
+    "answer": "He's thinking about changing jobs.",
+    "difficulty": 2,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "a2_022",
+    "prompt": "I managed to finish on time.",
+    "answer": "I managed to finish on time.",
     "difficulty": 2,
     "category": "questions"
   },
   {
-    "id": "a2_009",
-    "prompt": "I need to make an appointment.",
-    "answer": "I need to make an appointment.",
+    "id": "a2_023",
+    "prompt": "They didn't mention the new regulations.",
+    "answer": "They didn't mention the new regulations.",
     "difficulty": 2,
-    "category": "appointments"
+    "category": "family"
   },
   {
-    "id": "a2_010",
-    "prompt": "That sounds like a great idea.",
-    "answer": "That sounds like a great idea.",
+    "id": "a2_024",
+    "prompt": "Could you explain this word to me?",
+    "answer": "Could you explain this word to me?",
     "difficulty": 2,
-    "category": "opinions"
+    "category": "colors"
+  },
+  {
+    "id": "a2_025",
+    "prompt": "She arrived earlier than expected.",
+    "answer": "She arrived earlier than expected.",
+    "difficulty": 2,
+    "category": "numbers"
+  },
+  {
+    "id": "a2_026",
+    "prompt": "I'm looking for my missing keys.",
+    "answer": "I'm looking for my missing keys.",
+    "difficulty": 2,
+    "category": "food"
+  },
+  {
+    "id": "a2_027",
+    "prompt": "He promised to call me tonight.",
+    "answer": "He promised to call me tonight.",
+    "difficulty": 2,
+    "category": "weather"
+  },
+  {
+    "id": "a2_028",
+    "prompt": "We discussed our holiday plans yesterday.",
+    "answer": "We discussed our holiday plans yesterday.",
+    "difficulty": 2,
+    "category": "transportation"
+  },
+  {
+    "id": "a2_029",
+    "prompt": "She suggested visiting the museum.",
+    "answer": "She suggested visiting the museum.",
+    "difficulty": 2,
+    "category": "work"
+  },
+  {
+    "id": "a2_030",
+    "prompt": "I failed to pass the exam.",
+    "answer": "I failed to pass the exam.",
+    "difficulty": 2,
+    "category": "school"
+  },
+  {
+    "id": "a2_031",
+    "prompt": "They've moved to a different city.",
+    "answer": "They've moved to a different city.",
+    "difficulty": 2,
+    "category": "hobbies"
+  },
+  {
+    "id": "a2_032",
+    "prompt": "Could you turn up the volume?",
+    "answer": "Could you turn up the volume?",
+    "difficulty": 2,
+    "category": "travel"
+  },
+  {
+    "id": "a2_033",
+    "prompt": "He refused to answer the questions.",
+    "answer": "He refused to answer the questions.",
+    "difficulty": 2,
+    "category": "shopping"
+  },
+  {
+    "id": "a2_034",
+    "prompt": "We're considering renting a small apartment.",
+    "answer": "We're considering renting a small apartment.",
+    "difficulty": 2,
+    "category": "health"
+  },
+  {
+    "id": "a2_035",
+    "prompt": "She reminded me about the appointment.",
+    "answer": "She reminded me about the appointment.",
+    "difficulty": 2,
+    "category": "time"
+  },
+  {
+    "id": "a2_036",
+    "prompt": "I assume it's going to rain tomorrow.",
+    "answer": "I assume it's going to rain tomorrow.",
+    "difficulty": 2,
+    "category": "directions"
+  },
+  {
+    "id": "a2_037",
+    "prompt": "They repaired the broken bicycle.",
+    "answer": "They repaired the broken bicycle.",
+    "difficulty": 2,
+    "category": "emotions"
+  },
+  {
+    "id": "a2_038",
+    "prompt": "Have you booked the tickets already?",
+    "answer": "Have you booked the tickets already?",
+    "difficulty": 2,
+    "category": "abilities"
+  },
+  {
+    "id": "a2_039",
+    "prompt": "He complained about the noise.",
+    "answer": "He complained about the noise.",
+    "difficulty": 2,
+    "category": "preferences"
+  },
+  {
+    "id": "a2_040",
+    "prompt": "We arranged a meeting next week.",
+    "answer": "We arranged a meeting next week.",
+    "difficulty": 2,
+    "category": "daily_routine"
+  },
+  {
+    "id": "a2_041",
+    "prompt": "She insisted on paying the bill.",
+    "answer": "She insisted on paying the bill.",
+    "difficulty": 2,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "a2_042",
+    "prompt": "I'm looking forward to the concert.",
+    "answer": "I'm looking forward to the concert.",
+    "difficulty": 2,
+    "category": "questions"
+  },
+  {
+    "id": "a2_043",
+    "prompt": "He regretted not accepting the offer.",
+    "answer": "He regretted not accepting the offer.",
+    "difficulty": 2,
+    "category": "family"
+  },
+  {
+    "id": "a2_044",
+    "prompt": "They negotiated a better price.",
+    "answer": "They negotiated a better price.",
+    "difficulty": 2,
+    "category": "colors"
+  },
+  {
+    "id": "a2_045",
+    "prompt": "Could you pass me the salt?",
+    "answer": "Could you pass me the salt?",
+    "difficulty": 2,
+    "category": "numbers"
+  },
+  {
+    "id": "a2_046",
+    "prompt": "She realized she left her wallet.",
+    "answer": "She realized she left her wallet.",
+    "difficulty": 2,
+    "category": "food"
+  },
+  {
+    "id": "a2_047",
+    "prompt": "They organized a charity event.",
+    "answer": "They organized a charity event.",
+    "difficulty": 2,
+    "category": "weather"
+  },
+  {
+    "id": "a2_048",
+    "prompt": "We explored different cultures online.",
+    "answer": "We explored different cultures online.",
+    "difficulty": 2,
+    "category": "transportation"
+  },
+  {
+    "id": "a2_049",
+    "prompt": "He denied breaking the vase.",
+    "answer": "He denied breaking the vase.",
+    "difficulty": 2,
+    "category": "work"
+  },
+  {
+    "id": "a2_050",
+    "prompt": "I'm trying to improve my pronunciation.",
+    "answer": "I'm trying to improve my pronunciation.",
+    "difficulty": 2,
+    "category": "school"
   }
-] 
+]

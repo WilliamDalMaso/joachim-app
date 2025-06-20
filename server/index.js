@@ -25,7 +25,8 @@ import {
   getNextLevel, 
   isValidLevel, 
   getAvailableLevels,
-  getLessonStats
+  getLessonStats,
+  getLessonById
 } from './lessons.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

@@ -1,0 +1,352 @@
+[
+  {
+    "id": "b1_001",
+    "prompt": "Despite the heavy traffic, we arrived on time.",
+    "answer": "Despite the heavy traffic, we arrived on time.",
+    "difficulty": 3,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "b1_002",
+    "prompt": "If I had known about the concert, I would have bought tickets.",
+    "answer": "If I had known about the concert, I would have bought tickets.",
+    "difficulty": 3,
+    "category": "questions"
+  },
+  {
+    "id": "b1_003",
+    "prompt": "She apologized for missing the appointment.",
+    "answer": "She apologized for missing the appointment.",
+    "difficulty": 3,
+    "category": "family"
+  },
+  {
+    "id": "b1_004",
+    "prompt": "The documentary offered insight into ancient civilizations.",
+    "answer": "The documentary offered insight into ancient civilizations.",
+    "difficulty": 3,
+    "category": "colors"
+  },
+  {
+    "id": "b1_005",
+    "prompt": "He insisted that we reconsider our decision.",
+    "answer": "He insisted that we reconsider our decision.",
+    "difficulty": 3,
+    "category": "numbers"
+  },
+  {
+    "id": "b1_006",
+    "prompt": "I’m considering adopting a healthier lifestyle.",
+    "answer": "I’m considering adopting a healthier lifestyle.",
+    "difficulty": 3,
+    "category": "food"
+  },
+  {
+    "id": "b1_007",
+    "prompt": "They will launch the new product next quarter.",
+    "answer": "They will launch the new product next quarter.",
+    "difficulty": 3,
+    "category": "weather"
+  },
+  {
+    "id": "b1_008",
+    "prompt": "Could you clarify the main objectives of the project?",
+    "answer": "Could you clarify the main objectives of the project?",
+    "difficulty": 3,
+    "category": "transportation"
+  },
+  {
+    "id": "b1_009",
+    "prompt": "We discussed potential solutions during the workshop.",
+    "answer": "We discussed potential solutions during the workshop.",
+    "difficulty": 3,
+    "category": "work"
+  },
+  {
+    "id": "b1_010",
+    "prompt": "She managed to overcome her fear of public speaking.",
+    "answer": "She managed to overcome her fear of public speaking.",
+    "difficulty": 3,
+    "category": "school"
+  },
+  {
+    "id": "b1_011",
+    "prompt": "By the time I arrived, the event had already begun.",
+    "answer": "By the time I arrived, the event had already begun.",
+    "difficulty": 3,
+    "category": "hobbies"
+  },
+  {
+    "id": "b1_012",
+    "prompt": "I wonder whether it's worth investing in that startup.",
+    "answer": "I wonder whether it's worth investing in that startup.",
+    "difficulty": 3,
+    "category": "travel"
+  },
+  {
+    "id": "b1_013",
+    "prompt": "He frequently encounters challenges at work.",
+    "answer": "He frequently encounters challenges at work.",
+    "difficulty": 3,
+    "category": "shopping"
+  },
+  {
+    "id": "b1_014",
+    "prompt": "The committee approved the proposal unanimously.",
+    "answer": "The committee approved the proposal unanimously.",
+    "difficulty": 3,
+    "category": "health"
+  },
+  {
+    "id": "b1_015",
+    "prompt": "I’m looking forward to receiving your feedback.",
+    "answer": "I’m looking forward to receiving your feedback.",
+    "difficulty": 3,
+    "category": "time"
+  },
+  {
+    "id": "b1_016",
+    "prompt": "They compared the two models before making a choice.",
+    "answer": "They compared the two models before making a choice.",
+    "difficulty": 3,
+    "category": "directions"
+  },
+  {
+    "id": "b1_017",
+    "prompt": "She requested an extension for submitting the report.",
+    "answer": "She requested an extension for submitting the report.",
+    "difficulty": 3,
+    "category": "emotions"
+  },
+  {
+    "id": "b1_018",
+    "prompt": "I’ve been studying the impact of climate change.",
+    "answer": "I’ve been studying the impact of climate change.",
+    "difficulty": 3,
+    "category": "abilities"
+  },
+  {
+    "id": "b1_019",
+    "prompt": "Would you mind reviewing this document for errors?",
+    "answer": "Would you mind reviewing this document for errors?",
+    "difficulty": 3,
+    "category": "preferences"
+  },
+  {
+    "id": "b1_020",
+    "prompt": "We need to allocate resources more efficiently.",
+    "answer": "We need to allocate resources more efficiently.",
+    "difficulty": 3,
+    "category": "daily_routine"
+  },
+  {
+    "id": "b1_021",
+    "prompt": "He seems genuinely interested in the topic.",
+    "answer": "He seems genuinely interested in the topic.",
+    "difficulty": 3,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "b1_022",
+    "prompt": "I’ve noticed significant improvements in my skills.",
+    "answer": "I’ve noticed significant improvements in my skills.",
+    "difficulty": 3,
+    "category": "questions"
+  },
+  {
+    "id": "b1_023",
+    "prompt": "They postponed the deadline to accommodate everyone.",
+    "answer": "They postponed the deadline to accommodate everyone.",
+    "difficulty": 3,
+    "category": "family"
+  },
+  {
+    "id": "b1_024",
+    "prompt": "She volunteered to lead the fundraising campaign.",
+    "answer": "She volunteered to lead the fundraising campaign.",
+    "difficulty": 3,
+    "category": "colors"
+  },
+  {
+    "id": "b1_025",
+    "prompt": "I regret not learning a second language sooner.",
+    "answer": "I regret not learning a second language sooner.",
+    "difficulty": 3,
+    "category": "numbers"
+  },
+  {
+    "id": "b1_026",
+    "prompt": "The manager emphasized the importance of teamwork.",
+    "answer": "The manager emphasized the importance of teamwork.",
+    "difficulty": 3,
+    "category": "food"
+  },
+  {
+    "id": "b1_027",
+    "prompt": "I had trouble understanding the professor’s lecture.",
+    "answer": "I had trouble understanding the professor’s lecture.",
+    "difficulty": 3,
+    "category": "weather"
+  },
+  {
+    "id": "b1_028",
+    "prompt": "They organized a conference to showcase innovations.",
+    "answer": "They organized a conference to showcase innovations.",
+    "difficulty": 3,
+    "category": "transportation"
+  },
+  {
+    "id": "b1_029",
+    "prompt": "She admitted making a mistake during the presentation.",
+    "answer": "She admitted making a mistake during the presentation.",
+    "difficulty": 3,
+    "category": "work"
+  },
+  {
+    "id": "b1_030",
+    "prompt": "I’d rather travel by train than by plane.",
+    "answer": "I’d rather travel by train than by plane.",
+    "difficulty": 3,
+    "category": "school"
+  },
+  {
+    "id": "b1_031",
+    "prompt": "He thrives under pressure when facing tight deadlines.",
+    "answer": "He thrives under pressure when facing tight deadlines.",
+    "difficulty": 3,
+    "category": "hobbies"
+  },
+  {
+    "id": "b1_032",
+    "prompt": "We encountered unexpected obstacles along the way.",
+    "answer": "We encountered unexpected obstacles along the way.",
+    "difficulty": 3,
+    "category": "travel"
+  },
+  {
+    "id": "b1_033",
+    "prompt": "She persuaded her colleagues to support the initiative.",
+    "answer": "She persuaded her colleagues to support the initiative.",
+    "difficulty": 3,
+    "category": "shopping"
+  },
+  {
+    "id": "b1_034",
+    "prompt": "I aim to enhance my communication abilities.",
+    "answer": "I aim to enhance my communication abilities.",
+    "difficulty": 3,
+    "category": "health"
+  },
+  {
+    "id": "b1_035",
+    "prompt": "They divided the tasks according to each member’s strengths.",
+    "answer": "They divided the tasks according to each member’s strengths.",
+    "difficulty": 3,
+    "category": "time"
+  },
+  {
+    "id": "b1_036",
+    "prompt": "He recommended reading the latest research article.",
+    "answer": "He recommended reading the latest research article.",
+    "difficulty": 3,
+    "category": "directions"
+  },
+  {
+    "id": "b1_037",
+    "prompt": "I’ve scheduled a meeting with the marketing team.",
+    "answer": "I’ve scheduled a meeting with the marketing team.",
+    "difficulty": 3,
+    "category": "emotions"
+  },
+  {
+    "id": "b1_038",
+    "prompt": "She insisted on verifying all the data personally.",
+    "answer": "She insisted on verifying all the data personally.",
+    "difficulty": 3,
+    "category": "abilities"
+  },
+  {
+    "id": "b1_039",
+    "prompt": "We collaborated closely on the software development.",
+    "answer": "We collaborated closely on the software development.",
+    "difficulty": 3,
+    "category": "preferences"
+  },
+  {
+    "id": "b1_040",
+    "prompt": "He has applied for a position in the finance department.",
+    "answer": "He has applied for a position in the finance department.",
+    "difficulty": 3,
+    "category": "daily_routine"
+  },
+  {
+    "id": "b1_041",
+    "prompt": "I intend to participate in the upcoming seminar.",
+    "answer": "I intend to participate in the upcoming seminar.",
+    "difficulty": 3,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "b1_042",
+    "prompt": "They implemented a new strategy to boost sales.",
+    "answer": "They implemented a new strategy to boost sales.",
+    "difficulty": 3,
+    "category": "questions"
+  },
+  {
+    "id": "b1_043",
+    "prompt": "She described her experiences in considerable detail.",
+    "answer": "She described her experiences in considerable detail.",
+    "difficulty": 3,
+    "category": "family"
+  },
+  {
+    "id": "b1_044",
+    "prompt": "I’ve encountered similar problems in previous projects.",
+    "answer": "I’ve encountered similar problems in previous projects.",
+    "difficulty": 3,
+    "category": "colors"
+  },
+  {
+    "id": "b1_045",
+    "prompt": "He contributed valuable insights during the discussion.",
+    "answer": "He contributed valuable insights during the discussion.",
+    "difficulty": 3,
+    "category": "numbers"
+  },
+  {
+    "id": "b1_046",
+    "prompt": "We established clear guidelines for the assignment.",
+    "answer": "We established clear guidelines for the assignment.",
+    "difficulty": 3,
+    "category": "food"
+  },
+  {
+    "id": "b1_047",
+    "prompt": "She completed the installation without any assistance.",
+    "answer": "She completed the installation without any assistance.",
+    "difficulty": 3,
+    "category": "weather"
+  },
+  {
+    "id": "b1_048",
+    "prompt": "I’ve observed a decline in customer satisfaction.",
+    "answer": "I’ve observed a decline in customer satisfaction.",
+    "difficulty": 3,
+    "category": "transportation"
+  },
+  {
+    "id": "b1_049",
+    "prompt": "They negotiated terms that were favorable to both parties.",
+    "answer": "They negotiated terms that were favorable to both parties.",
+    "difficulty": 3,
+    "category": "work"
+  },
+  {
+    "id": "b1_050",
+    "prompt": "He strives to maintain a healthy work-life balance.",
+    "answer": "He strives to maintain a healthy work-life balance.",
+    "difficulty": 3,
+    "category": "school"
+  }
+]

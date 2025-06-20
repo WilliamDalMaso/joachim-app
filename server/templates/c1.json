@@ -1,0 +1,352 @@
+[
+  {
+    "id": "c1_001",
+    "prompt": "The study elucidates the molecular mechanisms underlying cellular senescence.",
+    "answer": "The study elucidates the molecular mechanisms underlying cellular senescence.",
+    "difficulty": 5,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "c1_002",
+    "prompt": "Her thesis critically examines the epistemological foundations of qualitative research.",
+    "answer": "Her thesis critically examines the epistemological foundations of qualitative research.",
+    "difficulty": 5,
+    "category": "questions"
+  },
+  {
+    "id": "c1_003",
+    "prompt": "We must mitigate the confounding variables to ensure experimental validity.",
+    "answer": "We must mitigate the confounding variables to ensure experimental validity.",
+    "difficulty": 5,
+    "category": "family"
+  },
+  {
+    "id": "c1_004",
+    "prompt": "The pharmacokinetic profile of the novel compound was characterized in vivo.",
+    "answer": "The pharmacokinetic profile of the novel compound was characterized in vivo.",
+    "difficulty": 5,
+    "category": "colors"
+  },
+  {
+    "id": "c1_005",
+    "prompt": "His argument posits a correlation between socioeconomic status and cognitive development.",
+    "answer": "His argument posits a correlation between socioeconomic status and cognitive development.",
+    "difficulty": 5,
+    "category": "numbers"
+  },
+  {
+    "id": "c1_006",
+    "prompt": "The corpus analysis revealed significant thematic patterns across genres.",
+    "answer": "The corpus analysis revealed significant thematic patterns across genres.",
+    "difficulty": 5,
+    "category": "food"
+  },
+  {
+    "id": "c1_007",
+    "prompt": "It is imperative to standardize measurement techniques for reproducibility.",
+    "answer": "It is imperative to standardize measurement techniques for reproducibility.",
+    "difficulty": 5,
+    "category": "weather"
+  },
+  {
+    "id": "c1_008",
+    "prompt": "She synthesized data from disparate sources to formulate a cohesive model.",
+    "answer": "She synthesized data from disparate sources to formulate a cohesive model.",
+    "difficulty": 5,
+    "category": "transportation"
+  },
+  {
+    "id": "c1_009",
+    "prompt": "The methodology integrates both quantitative and qualitative paradigms.",
+    "answer": "The methodology integrates both quantitative and qualitative paradigms.",
+    "difficulty": 5,
+    "category": "work"
+  },
+  {
+    "id": "c1_010",
+    "prompt": "Their findings challenge the prevailing theoretical framework in climatology.",
+    "answer": "Their findings challenge the prevailing theoretical framework in climatology.",
+    "difficulty": 5,
+    "category": "school"
+  },
+  {
+    "id": "c1_011",
+    "prompt": "The meta-analysis aggregates results from multiple randomized controlled trials.",
+    "answer": "The meta-analysis aggregates results from multiple randomized controlled trials.",
+    "difficulty": 5,
+    "category": "hobbies"
+  },
+  {
+    "id": "c1_012",
+    "prompt": "He postulates that neural plasticity decreases with advanced age.",
+    "answer": "He postulates that neural plasticity decreases with advanced age.",
+    "difficulty": 5,
+    "category": "travel"
+  },
+  {
+    "id": "c1_013",
+    "prompt": "To elucidate causality, we applied a longitudinal research design.",
+    "answer": "To elucidate causality, we applied a longitudinal research design.",
+    "difficulty": 5,
+    "category": "shopping"
+  },
+  {
+    "id": "c1_014",
+    "prompt": "The granular breakdown of participants highlights demographic disparities.",
+    "answer": "The granular breakdown of participants highlights demographic disparities.",
+    "difficulty": 5,
+    "category": "health"
+  },
+  {
+    "id": "c1_015",
+    "prompt": "This paradigm shift necessitates a reevaluation of theoretical assumptions.",
+    "answer": "This paradigm shift necessitates a reevaluation of theoretical assumptions.",
+    "difficulty": 5,
+    "category": "time"
+  },
+  {
+    "id": "c1_016",
+    "prompt": "Our hypothesis was corroborated by statistically significant results.",
+    "answer": "Our hypothesis was corroborated by statistically significant results.",
+    "difficulty": 5,
+    "category": "directions"
+  },
+  {
+    "id": "c1_017",
+    "prompt": "He employed multivariate regression to isolate key predictors.",
+    "answer": "He employed multivariate regression to isolate key predictors.",
+    "difficulty": 5,
+    "category": "emotions"
+  },
+  {
+    "id": "c1_018",
+    "prompt": "Ethical considerations were paramount during the clinical trial phase.",
+    "answer": "Ethical considerations were paramount during the clinical trial phase.",
+    "difficulty": 5,
+    "category": "abilities"
+  },
+  {
+    "id": "c1_019",
+    "prompt": "The dissertation delineates the evolution of postmodernist thought.",
+    "answer": "The dissertation delineates the evolution of postmodernist thought.",
+    "difficulty": 5,
+    "category": "preferences"
+  },
+  {
+    "id": "c1_020",
+    "prompt": "We observed a nonlinear relationship between dosage and efficacy.",
+    "answer": "We observed a nonlinear relationship between dosage and efficacy.",
+    "difficulty": 5,
+    "category": "daily_routine"
+  },
+  {
+    "id": "c1_021",
+    "prompt": "The theoretical implications extend beyond the confines of the case study.",
+    "answer": "The theoretical implications extend beyond the confines of the case study.",
+    "difficulty": 5,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "c1_022",
+    "prompt": "By employing stratified sampling, we enhanced population representativeness.",
+    "answer": "By employing stratified sampling, we enhanced population representativeness.",
+    "difficulty": 5,
+    "category": "questions"
+  },
+  {
+    "id": "c1_023",
+    "prompt": "Her critique underscores the limitations of current pedagogical models.",
+    "answer": "Her critique underscores the limitations of current pedagogical models.",
+    "difficulty": 5,
+    "category": "family"
+  },
+  {
+    "id": "c1_024",
+    "prompt": "The experiment was replicated to verify the initial observations.",
+    "answer": "The experiment was replicated to verify the initial observations.",
+    "difficulty": 5,
+    "category": "colors"
+  },
+  {
+    "id": "c1_025",
+    "prompt": "Inevitably, data anomalies necessitated additional quality control measures.",
+    "answer": "Inevitably, data anomalies necessitated additional quality control measures.",
+    "difficulty": 5,
+    "category": "numbers"
+  },
+  {
+    "id": "c1_026",
+    "prompt": "We constructed a conceptual framework to guide subsequent analyses.",
+    "answer": "We constructed a conceptual framework to guide subsequent analyses.",
+    "difficulty": 5,
+    "category": "food"
+  },
+  {
+    "id": "c1_027",
+    "prompt": "The policy brief advocates for evidence-based interventions in public health.",
+    "answer": "The policy brief advocates for evidence-based interventions in public health.",
+    "difficulty": 5,
+    "category": "weather"
+  },
+  {
+    "id": "c1_028",
+    "prompt": "Our literature review synthesizes findings from interdisciplinary fields.",
+    "answer": "Our literature review synthesizes findings from interdisciplinary fields.",
+    "difficulty": 5,
+    "category": "transportation"
+  },
+  {
+    "id": "c1_029",
+    "prompt": "He extrapolated future trends using time-series forecasting models.",
+    "answer": "He extrapolated future trends using time-series forecasting models.",
+    "difficulty": 5,
+    "category": "work"
+  },
+  {
+    "id": "c1_030",
+    "prompt": "The grant proposal outlines objectives, methodology, and anticipated outcomes.",
+    "answer": "The grant proposal outlines objectives, methodology, and anticipated outcomes.",
+    "difficulty": 5,
+    "category": "school"
+  },
+  {
+    "id": "c1_031",
+    "prompt": "She implemented a double-blind protocol to minimize bias.",
+    "answer": "She implemented a double-blind protocol to minimize bias.",
+    "difficulty": 5,
+    "category": "hobbies"
+  },
+  {
+    "id": "c1_032",
+    "prompt": "The seminar facilitated a rigorous dialogue on sustainable development.",
+    "answer": "The seminar facilitated a rigorous dialogue on sustainable development.",
+    "difficulty": 5,
+    "category": "travel"
+  },
+  {
+    "id": "c1_033",
+    "prompt": "We quantified the variance to assess interobserver reliability.",
+    "answer": "We quantified the variance to assess interobserver reliability.",
+    "difficulty": 5,
+    "category": "shopping"
+  },
+  {
+    "id": "c1_034",
+    "prompt": "His commentary deconstructs the sociocultural dimensions of globalization.",
+    "answer": "His commentary deconstructs the sociocultural dimensions of globalization.",
+    "difficulty": 5,
+    "category": "health"
+  },
+  {
+    "id": "c1_035",
+    "prompt": "A factorial design was chosen to examine interaction effects.",
+    "answer": "A factorial design was chosen to examine interaction effects.",
+    "difficulty": 5,
+    "category": "time"
+  },
+  {
+    "id": "c1_036",
+    "prompt": "The audit report identified critical control deficiencies.",
+    "answer": "The audit report identified critical control deficiencies.",
+    "difficulty": 5,
+    "category": "directions"
+  },
+  {
+    "id": "c1_037",
+    "prompt": "The editorial peer-review process ensures scholarly rigor.",
+    "answer": "The editorial peer-review process ensures scholarly rigor.",
+    "difficulty": 5,
+    "category": "emotions"
+  },
+  {
+    "id": "c1_038",
+    "prompt": "Our findings were presented at the international symposium on nanotechnology.",
+    "answer": "Our findings were presented at the international symposium on nanotechnology.",
+    "difficulty": 5,
+    "category": "abilities"
+  },
+  {
+    "id": "c1_039",
+    "prompt": "They operationalized the construct through validated psychometric scales.",
+    "answer": "They operationalized the construct through validated psychometric scales.",
+    "difficulty": 5,
+    "category": "preferences"
+  },
+  {
+    "id": "c1_040",
+    "prompt": "The white paper articulates strategic imperatives for organizational change.",
+    "answer": "The white paper articulates strategic imperatives for organizational change.",
+    "difficulty": 5,
+    "category": "daily_routine"
+  },
+  {
+    "id": "c1_041",
+    "prompt": "She employed thematic coding to analyze interview transcripts.",
+    "answer": "She employed thematic coding to analyze interview transcripts.",
+    "difficulty": 5,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "c1_042",
+    "prompt": "The convergence of evidence substantiates the proposed theory.",
+    "answer": "The convergence of evidence substantiates the proposed theory.",
+    "difficulty": 5,
+    "category": "questions"
+  },
+  {
+    "id": "c1_043",
+    "prompt": "By triangulating data sources, we increased the study’s credibility.",
+    "answer": "By triangulating data sources, we increased the study’s credibility.",
+    "difficulty": 5,
+    "category": "family"
+  },
+  {
+    "id": "c1_044",
+    "prompt": "The heuristic approach expedited the problem-solving process.",
+    "answer": "The heuristic approach expedited the problem-solving process.",
+    "difficulty": 5,
+    "category": "colors"
+  },
+  {
+    "id": "c1_045",
+    "prompt": "He drafted the systematic review following PRISMA guidelines.",
+    "answer": "He drafted the systematic review following PRISMA guidelines.",
+    "difficulty": 5,
+    "category": "numbers"
+  },
+  {
+    "id": "c1_046",
+    "prompt": "The data visualization elucidates complex relational networks.",
+    "answer": "The data visualization elucidates complex relational networks.",
+    "difficulty": 5,
+    "category": "food"
+  },
+  {
+    "id": "c1_047",
+    "prompt": "We conducted sensitivity analyses to evaluate parameter robustness.",
+    "answer": "We conducted sensitivity analyses to evaluate parameter robustness.",
+    "difficulty": 5,
+    "category": "weather"
+  },
+  {
+    "id": "c1_048",
+    "prompt": "Her monograph explores the philosophical dimensions of artificial intelligence.",
+    "answer": "Her monograph explores the philosophical dimensions of artificial intelligence.",
+    "difficulty": 5,
+    "category": "transportation"
+  },
+  {
+    "id": "c1_049",
+    "prompt": "The cross-sectional survey captures a snapshot of prevailing attitudes.",
+    "answer": "The cross-sectional survey captures a snapshot of prevailing attitudes.",
+    "difficulty": 5,
+    "category": "work"
+  },
+  {
+    "id": "c1_050",
+    "prompt": "Ethnographic fieldwork provided nuanced insights into community dynamics.",
+    "answer": "Ethnographic fieldwork provided nuanced insights into community dynamics.",
+    "difficulty": 5,
+    "category": "school"
+  }
+]
