@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, Mic, Settings, X, Send } from 'lucide-react';
+import { Menu, Mic, Settings, X, Send, BookOpen, MessageCircle } from 'lucide-react';
 import { useRealtimeConversation } from '../hooks/useRealtimeConversation';
+import LessonInterface from './LessonInterface';
+import LevelSelection from './LevelSelection';
 
 interface ChatInterfaceProps {
   className?: string;
 }
+
+type AppMode = 'chat' | 'lessons';
 
 const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -12,6 +16,9 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   const [currentBot, setCurrentBot] = useState('Listening');
   const [inputValue, setInputValue] = useState('');
   const [messages, setMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([]);
+  const [appMode, setAppMode] = useState<AppMode>('chat');
+  const [selectedLevel, setSelectedLevel] = useState<string | null>(null);
+  const [userId] = useState(() => `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
 
   const {
     isConnected,
@@ -82,6 +89,32 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
     }
   };
 
+  const handleLevelSelect = (level: string) => {
+    setSelectedLevel(level);
+  };
+
+  const handleLevelComplete = (level: string, nextLevel?: string) => {
+    if (nextLevel) {
+      setSelectedLevel(nextLevel);
+    } else {
+      setSelectedLevel(null);
+      setAppMode('chat');
+    }
+  };
+
+  const handleSessionEnd = (lessonsCompleted: number) => {
+    setSelectedLevel(null);
+    setAppMode('chat');
+    // Could show a summary here
+  };
+
+  const handleModeSwitch = (mode: AppMode) => {
+    setAppMode(mode);
+    if (mode === 'lessons') {
+      setSelectedLevel(null);
+    }
+  };
+
   // Only show active states if user has activated the conversation
   const isVoiceActive = userActivated && (isListening || isSpeaking);
 
@@ -98,6 +131,28 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
       }`} />
     </div>
   );
+
+  // Render lesson interface if in lesson mode
+  if (appMode === 'lessons') {
+    if (selectedLevel) {
+      return (
+        <LessonInterface
+          userId={userId}
+          level={selectedLevel}
+          onLevelComplete={handleLevelComplete}
+          onSessionEnd={handleSessionEnd}
+        />
+      );
+    }
+    
+    return (
+      <LevelSelection
+        userId={userId}
+        onLevelSelect={handleLevelSelect}
+        onBack={() => setAppMode('chat')}
+      />
+    );
+  }
 
   return (
     <div className={`min-h-[100dvh] h-[100dvh] bg-black text-white flex flex-col ${className}`}>
@@ -147,8 +202,31 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
           <Menu className="h-5 w-5" />
         </button>
 
-        {/* Center - Bot Name */}
-        <h1 className="text-lg font-semibold text-white">{currentBot}</h1>
+        {/* Center - Mode Switcher */}
+        <div className="flex items-center bg-white/10 rounded-lg p-1">
+          <button
+            onClick={() => handleModeSwitch('chat')}
+            className={`px-3 py-1 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+              appMode === 'chat' 
+                ? 'bg-white text-black' 
+                : 'text-white/70 hover:text-white'
+            }`}
+          >
+            <MessageCircle className="h-4 w-4" />
+            Chat
+          </button>
+          <button
+            onClick={() => handleModeSwitch('lessons')}
+            className={`px-3 py-1 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+              appMode === 'lessons' 
+                ? 'bg-white text-black' 
+                : 'text-white/70 hover:text-white'
+            }`}
+          >
+            <BookOpen className="h-4 w-4" />
+            Lessons
+          </button>
+        </div>
 
         {/* Right - Voice Status */}
         <div className="flex items-center">

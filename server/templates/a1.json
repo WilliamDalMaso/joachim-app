@@ -1,0 +1,72 @@
+[
+  {
+    "id": "a1_001",
+    "prompt": "I have a cat at home.",
+    "answer": "I have a cat at home.",
+    "difficulty": 1,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "a1_002",
+    "prompt": "This is my friend.",
+    "answer": "This is my friend.",
+    "difficulty": 1,
+    "category": "basic_phrases"
+  },
+  {
+    "id": "a1_003",
+    "prompt": "What is your name?",
+    "answer": "What is your name?",
+    "difficulty": 1,
+    "category": "questions"
+  },
+  {
+    "id": "a1_004",
+    "prompt": "I like coffee.",
+    "answer": "I like coffee.",
+    "difficulty": 1,
+    "category": "preferences"
+  },
+  {
+    "id": "a1_005",
+    "prompt": "Where do you live?",
+    "answer": "Where do you live?",
+    "difficulty": 1,
+    "category": "questions"
+  },
+  {
+    "id": "a1_006",
+    "prompt": "The weather is nice today.",
+    "answer": "The weather is nice today.",
+    "difficulty": 1,
+    "category": "weather"
+  },
+  {
+    "id": "a1_007",
+    "prompt": "I work in an office.",
+    "answer": "I work in an office.",
+    "difficulty": 1,
+    "category": "work"
+  },
+  {
+    "id": "a1_008",
+    "prompt": "Do you speak English?",
+    "answer": "Do you speak English?",
+    "difficulty": 1,
+    "category": "questions"
+  },
+  {
+    "id": "a1_009",
+    "prompt": "I want to learn English.",
+    "answer": "I want to learn English.",
+    "difficulty": 1,
+    "category": "learning"
+  },
+  {
+    "id": "a1_010",
+    "prompt": "Thank you very much.",
+    "answer": "Thank you very much.",
+    "difficulty": 1,
+    "category": "courtesy"
+  }
+] 

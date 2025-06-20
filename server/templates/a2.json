@@ -1,0 +1,72 @@
+[
+  {
+    "id": "a2_001",
+    "prompt": "I would like to order a pizza.",
+    "answer": "I would like to order a pizza.",
+    "difficulty": 2,
+    "category": "food_ordering"
+  },
+  {
+    "id": "a2_002",
+    "prompt": "Can you help me with this?",
+    "answer": "Can you help me with this?",
+    "difficulty": 2,
+    "category": "requests"
+  },
+  {
+    "id": "a2_003",
+    "prompt": "I have been studying English for two years.",
+    "answer": "I have been studying English for two years.",
+    "difficulty": 2,
+    "category": "experience"
+  },
+  {
+    "id": "a2_004",
+    "prompt": "What time does the movie start?",
+    "answer": "What time does the movie start?",
+    "difficulty": 2,
+    "category": "questions"
+  },
+  {
+    "id": "a2_005",
+    "prompt": "I think it's going to rain tomorrow.",
+    "answer": "I think it's going to rain tomorrow.",
+    "difficulty": 2,
+    "category": "weather"
+  },
+  {
+    "id": "a2_006",
+    "prompt": "Could you repeat that, please?",
+    "answer": "Could you repeat that, please?",
+    "difficulty": 2,
+    "category": "requests"
+  },
+  {
+    "id": "a2_007",
+    "prompt": "I'm looking for a good restaurant.",
+    "answer": "I'm looking for a good restaurant.",
+    "difficulty": 2,
+    "category": "travel"
+  },
+  {
+    "id": "a2_008",
+    "prompt": "How long have you lived here?",
+    "answer": "How long have you lived here?",
+    "difficulty": 2,
+    "category": "questions"
+  },
+  {
+    "id": "a2_009",
+    "prompt": "I need to make an appointment.",
+    "answer": "I need to make an appointment.",
+    "difficulty": 2,
+    "category": "appointments"
+  },
+  {
+    "id": "a2_010",
+    "prompt": "That sounds like a great idea.",
+    "answer": "That sounds like a great idea.",
+    "difficulty": 2,
+    "category": "opinions"
+  }
+] 
