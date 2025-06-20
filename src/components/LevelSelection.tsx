@@ -38,13 +38,15 @@ const LevelSelection: React.FC<LevelSelectionProps> = ({
 
   const loadLevelsAndProgress = async () => {
     try {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      
       // Load available levels
-      const levelsResponse = await fetch('http://localhost:3001/lessons/levels');
+      const levelsResponse = await fetch(`${apiUrl}/lessons/levels`);
       const levelsData = await levelsResponse.json();
       setLevels(levelsData.levels);
 
       // Load user progress
-      const progressResponse = await fetch(`http://localhost:3001/progress/${userId}`);
+      const progressResponse = await fetch(`${apiUrl}/progress/${userId}`);
       if (progressResponse.ok) {
         const progressData = await progressResponse.json();
         setUserProgress(progressData);
@@ -52,7 +54,7 @@ const LevelSelection: React.FC<LevelSelectionProps> = ({
 
       // Load stats for each level
       const statsPromises = levelsData.levels.map(async (level: string) => {
-        const statsResponse = await fetch(`http://localhost:3001/lessons/stats/${level}`);
+        const statsResponse = await fetch(`${apiUrl}/lessons/stats/${level}`);
         if (statsResponse.ok) {
           const stats = await statsResponse.json();
           return [level, stats];

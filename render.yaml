@@ -10,7 +10,13 @@ services:
         value: production
       - key: OPENAI_API_KEY
         sync: false
+      - key: PORT
+        value: 10000
     healthCheckPath: /health
+    disk:
+      name: audio-storage
+      mountPath: /opt/render/project/src/server/audio
+      sizeGB: 1
 
   # Frontend static site
   - type: web

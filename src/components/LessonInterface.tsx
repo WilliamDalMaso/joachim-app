@@ -45,7 +45,8 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
 
   const startSession = async () => {
     try {
-      const response = await fetch('http://localhost:3001/session/start', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const response = await fetch(`${apiUrl}/session/start`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userId, level })
@@ -68,7 +69,8 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
     setUserAnswer('');
 
     try {
-      const response = await fetch(`http://localhost:3001/lessons/random/${level}/${userId}`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const response = await fetch(`${apiUrl}/lessons/random/${level}/${userId}`);
       const data = await response.json();
 
       if (data.levelCompleted) {
@@ -82,7 +84,7 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
 
       setCurrentLesson(data.lesson);
       setProgress(data.progress);
-      setAudioUrl(data.audioUrl ? `http://localhost:3001${data.audioUrl}` : null);
+      setAudioUrl(data.audioUrl ? `${apiUrl}${data.audioUrl}` : null);
     } catch (error) {
       console.error('Error loading lesson:', error);
     } finally {
@@ -106,7 +108,8 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
 
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:3001/lessons/submit', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const response = await fetch(`${apiUrl}/lessons/submit`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -136,7 +139,8 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
   const handleEndSession = async () => {
     if (sessionId) {
       try {
-        await fetch('http://localhost:3001/session/end', {
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+        await fetch(`${apiUrl}/session/end`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ sessionId, lessonsCompleted })
