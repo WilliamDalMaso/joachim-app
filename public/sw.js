@@ -1,4 +1,6 @@
-const CACHE_NAME = 'english-on-the-go-v1';
+// Version constant - bump this on every deploy to force iOS updates
+const CACHE_VERSION = 'v1.2.4';
+const CACHE_NAME = `english-on-the-go-${CACHE_VERSION}`;
 const urlsToCache = [
   '/',
   '/manifest.json',
@@ -6,11 +8,16 @@ const urlsToCache = [
   '/icon-512.png'
 ];
 
-// Install event
+// Install event - Force immediate activation for iOS
 self.addEventListener('install', (event) => {
+  console.log('Service Worker installing...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => cache.addAll(urlsToCache))
+      .then(() => {
+        // Force the new worker to take control immediately
+        return self.skipWaiting();
+      })
   );
 });
 
@@ -61,17 +68,32 @@ function shouldSkipCache(request, url) {
   return false;
 }
 
-// Activate event
+// Activate event - Claim all clients immediately
 self.addEventListener('activate', (event) => {
+  console.log('Service Worker activating...');
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
+    Promise.all([
+      // Claim all clients immediately
+      self.clients.claim(),
+      // Clean up old caches
+      caches.keys().then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cacheName) => {
+            if (cacheName !== CACHE_NAME) {
+              console.log('Deleting old cache:', cacheName);
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+    ])
   );
+});
+
+// Handle messages from the main app
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    console.log('Received SKIP_WAITING message');
+    self.skipWaiting();
+  }
 });

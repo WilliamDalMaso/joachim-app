@@ -1,8 +1,14 @@
 import React from 'react';
 import ChatInterface from './components/ChatInterface';
+import UpdateNotification from './components/UpdateNotification';
 
 function App() {
-  return <ChatInterface />;
+  return (
+    <>
+      <ChatInterface />
+      <UpdateNotification />
+    </>
+  );
 }
 
 export default App;

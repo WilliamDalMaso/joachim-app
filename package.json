@@ -1,14 +1,16 @@
 {
   "name": "vite-react-typescript-starter",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.2.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "cd server && npm start"
+    "server": "cd server && npm start",
+    "bump-version": "node scripts/bump-version.js",
+    "deploy": "npm run bump-version && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
