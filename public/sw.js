@@ -1,5 +1,5 @@
 // Version constant - bump this on every deploy to force iOS updates
-const CACHE_VERSION = 'v1.2.4';
+const CACHE_VERSION = 'v1.2.5';
 const CACHE_NAME = `english-on-the-go-${CACHE_VERSION}`;
 const urlsToCache = [
   '/',
