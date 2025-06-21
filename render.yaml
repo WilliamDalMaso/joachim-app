@@ -3,6 +3,7 @@ services:
   - type: web
     name: joachim-app-api
     env: node
+    branch: example_1
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:
@@ -22,6 +23,7 @@ services:
   - type: web
     name: joachim-app-frontend
     env: static
+    branch: example_1
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
