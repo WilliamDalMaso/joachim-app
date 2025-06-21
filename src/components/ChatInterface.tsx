@@ -119,17 +119,13 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   const isVoiceActive = userActivated && (isListening || isSpeaking);
 
   const VoiceStatusIcon = ({ isActive }: { isActive: boolean }) => (
-    <div className="flex items-center gap-1">
-      <div className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-        isActive ? 'bg-green-400' : 'bg-white/50'
-      }`} />
-      <div className={`w-1 h-1 rounded-full transition-colors duration-200 ${
-        isActive ? 'bg-green-400' : 'bg-white/30'
-      }`} />
-      <div className={`w-1 h-1 rounded-full transition-colors duration-200 ${
-        isActive ? 'bg-green-400' : 'bg-white/30'
-      }`} />
-    </div>
+    <img
+      src="/realtime-indicator.png"
+      alt="Realtime status"
+      className={`w-12 h-12 transition-all duration-300 ${
+        isActive ? 'grayscale-0' : 'grayscale'
+      }`}
+    />
   );
 
   // Render lesson interface if in lesson mode
@@ -207,7 +203,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
           <button
             onClick={() => handleModeSwitch('chat')}
             className={`px-3 py-1 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
-              appMode === 'chat' 
+              String(appMode) === 'chat' 
                 ? 'bg-white text-black' 
                 : 'text-white/70 hover:text-white'
             }`}
@@ -218,7 +214,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
           <button
             onClick={() => handleModeSwitch('lessons')}
             className={`px-3 py-1 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
-              appMode === 'lessons' 
+              String(appMode) === 'lessons' 
                 ? 'bg-white text-black' 
                 : 'text-white/70 hover:text-white'
             }`}
