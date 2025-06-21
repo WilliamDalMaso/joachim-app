@@ -32,7 +32,7 @@ export const useServiceWorker = () => {
       const handleControllerChange = () => {
         setState(prev => ({ ...prev, isUpdating: true }));
         // Optionally reload the page
-        // window.location.reload();
+        window.location.reload();
       };
 
       // Get existing registration
