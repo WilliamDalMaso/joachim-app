@@ -1,6 +1,6 @@
 import React from 'react';
 import { RefreshCw, X } from 'lucide-react';
-import { useServiceWorker } from '../hooks/useServiceWorker';
+import { useServiceWorker } from '@/hooks/useServiceWorker';
 
 const UpdateNotification: React.FC = () => {
   const { isUpdateAvailable, updateApp, dismissUpdate } = useServiceWorker();
@@ -45,4 +45,5 @@ const UpdateNotification: React.FC = () => {
   );
 };
 
+export { UpdateNotification };
 export default UpdateNotification; 

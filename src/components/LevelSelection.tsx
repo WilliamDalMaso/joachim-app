@@ -17,13 +17,11 @@ interface UserProgress {
 }
 
 interface LevelSelectionProps {
-  userId: string;
   onLevelSelect: (level: string) => void;
   onBack?: () => void;
 }
 
 const LevelSelection: React.FC<LevelSelectionProps> = ({
-  userId,
   onLevelSelect,
   onBack
 }) => {
@@ -38,14 +36,15 @@ const LevelSelection: React.FC<LevelSelectionProps> = ({
 
   const loadLevelsAndProgress = async () => {
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
       
       // Load available levels
       const levelsResponse = await fetch(`${apiUrl}/lessons/levels`);
       const levelsData = await levelsResponse.json();
       setLevels(levelsData.levels);
 
-      // Load user progress
+      // Load user progress (using a default user ID for now)
+      const userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
       const progressResponse = await fetch(`${apiUrl}/progress/${userId}`);
       if (progressResponse.ok) {
         const progressData = await progressResponse.json();
@@ -260,4 +259,5 @@ const LevelSelection: React.FC<LevelSelectionProps> = ({
   );
 };
 
+export { LevelSelection };
 export default LevelSelection; 

@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, Mic, Settings, X, Send, BookOpen, MessageCircle } from 'lucide-react';
-import { useRealtimeConversation } from '../hooks/useRealtimeConversation';
+import { useRealtimeConversation } from '@/hooks/useRealtimeConversation';
 import LessonInterface from './LessonInterface';
 import LevelSelection from './LevelSelection';
 
 interface ChatInterfaceProps {
+  onBack?: () => void;
+  onLessonSelect?: (lesson: string) => void;
   className?: string;
 }
 
 type AppMode = 'chat' | 'lessons';
 
-const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
+const ChatInterface: React.FC<ChatInterfaceProps> = ({ 
+  onBack, 
+  onLessonSelect, 
+  className = '' 
+}) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [botModuleOpen, setBotModuleOpen] = useState(false);
   const [currentBot, setCurrentBot] = useState('Listening');
@@ -133,7 +139,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
     if (selectedLevel) {
       return (
         <LessonInterface
-          userId={userId}
           level={selectedLevel}
           onLevelComplete={handleLevelComplete}
           onSessionEnd={handleSessionEnd}
@@ -143,7 +148,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
     
     return (
       <LevelSelection
-        userId={userId}
         onLevelSelect={handleLevelSelect}
         onBack={() => setAppMode('chat')}
       />
@@ -380,4 +384,5 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   );
 };
 
+export { ChatInterface };
 export default ChatInterface;

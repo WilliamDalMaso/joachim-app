@@ -10,15 +10,15 @@ interface Lesson {
 }
 
 interface LessonInterfaceProps {
-  userId: string;
   level: string;
+  onBack?: () => void;
   onLevelComplete?: (level: string, nextLevel?: string) => void;
   onSessionEnd?: (lessonsCompleted: number) => void;
 }
 
 const LessonInterface: React.FC<LessonInterfaceProps> = ({
-  userId,
   level,
+  onBack,
   onLevelComplete,
   onSessionEnd
 }) => {
@@ -37,6 +37,7 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
   const [nextLevel, setNextLevel] = useState<string | null>(null);
 
   const audioRef = useRef<HTMLAudioElement>(null);
+  const userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
   // Start session and load first lesson
   useEffect(() => {
@@ -45,7 +46,7 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
 
   const startSession = async () => {
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
       const response = await fetch(`${apiUrl}/session/start`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -69,7 +70,7 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
     setUserAnswer('');
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
       const response = await fetch(`${apiUrl}/lessons/random/${level}/${userId}`);
       const data = await response.json();
 
@@ -108,7 +109,7 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
 
     setIsSubmitting(true);
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
       const response = await fetch(`${apiUrl}/lessons/submit`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -139,7 +140,7 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
   const handleEndSession = async () => {
     if (sessionId) {
       try {
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
         await fetch(`${apiUrl}/session/end`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -330,4 +331,5 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
   );
 };
 
+export { LessonInterface };
 export default LessonInterface; 

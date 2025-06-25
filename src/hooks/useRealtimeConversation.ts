@@ -84,7 +84,7 @@ export const useRealtimeConversation = (): UseRealtimeConversationReturn => {
       
       // Get ephemeral token from server
       console.log('Fetching ephemeral token...');
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
       const tokenResponse = await fetch(`${apiUrl}/session`, {
         method: 'POST',
         headers: {
