@@ -3,7 +3,7 @@ services:
   - type: web
     name: joachim-app-api
     env: node
-    branch: example_1
+    branch: example_2
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:
@@ -19,17 +19,18 @@ services:
       mountPath: /opt/render/project/src/server/audio
       sizeGB: 1
 
-  # Frontend static site
+  # Frontend Next.js app
   - type: web
     name: joachim-app-frontend
-    env: static
-    branch: example_1
+    env: node
+    branch: example_2
     buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    startCommand: npm start
     envVars:
-      - key: VITE_API_URL
-        value: https://joachim-app-api.onrender.com 
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: NEXT_PUBLIC_API_URL
+        value: https://joachim-app-api.onrender.com
+    healthCheckPath: / 
