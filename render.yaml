@@ -3,7 +3,7 @@ services:
   - type: web
     name: joachim-app-api
     env: node
-    branch: example_2
+    branch: example_1
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:
@@ -23,7 +23,7 @@ services:
   - type: web
     name: joachim-app-frontend
     env: node
-    branch: example_2
+    branch: example_1
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
