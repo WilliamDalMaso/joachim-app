@@ -9,16 +9,25 @@
     "lint": "next lint",
     "server": "cd server && npm start",
     "bump-version": "node scripts/bump-version.js",
-    "deploy": "npm run bump-version && npm run build"
+    "update-cache": "node scripts/update-cache-version.js",
+    "deploy": "npm run bump-version && npm run update-cache && npm run build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-tooltip": "^1.2.7",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.18.1",
     "lucide-react": "^0.344.0",
     "next": "^15.3.4",
+    "next-pwa": "^5.6.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "workbox-webpack-plugin": "^7.3.0",
+    "workbox-window": "^7.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

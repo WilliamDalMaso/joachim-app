@@ -1,99 +1,100 @@
-// Version constant - bump this on every deploy to force iOS updates
-const CACHE_VERSION = 'v1.2.5';
-const CACHE_NAME = `english-on-the-go-${CACHE_VERSION}`;
-const urlsToCache = [
-  '/',
-  '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png'
-];
+/**
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-// Install event - Force immediate activation for iOS
-self.addEventListener('install', (event) => {
-  console.log('Service Worker installing...');
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(urlsToCache))
+// If the loader is already loaded, just stop.
+if (!self.define) {
+  let registry = {};
+
+  // Used for `eval` and `importScripts` where we can't get script URL by other means.
+  // In both cases, it's safe to use a global var because those functions are synchronous.
+  let nextDefineUri;
+
+  const singleRequire = (uri, parentUri) => {
+    uri = new URL(uri + ".js", parentUri).href;
+    return registry[uri] || (
+      
+        new Promise(resolve => {
+          if ("document" in self) {
+            const script = document.createElement("script");
+            script.src = uri;
+            script.onload = resolve;
+            document.head.appendChild(script);
+          } else {
+            nextDefineUri = uri;
+            importScripts(uri);
+            resolve();
+          }
+        })
+      
       .then(() => {
-        // Force the new worker to take control immediately
-        return self.skipWaiting();
+        let promise = registry[uri];
+        if (!promise) {
+          throw new Error(`Module ${uri} didn’t register its module`);
+        }
+        return promise;
       })
-  );
-});
+    );
+  };
 
-// Fetch event - Simple strategy: cache static assets, never cache API calls
-self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
-  
-  // Never cache API calls, WebRTC, or dynamic content
-  if (shouldSkipCache(event.request, url)) {
-    event.respondWith(fetch(event.request));
-    return;
-  }
-  
-  // Cache-first strategy for static assets only
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Return cached version or fetch from network
-        return response || fetch(event.request);
-      })
-  );
-});
-
-// Helper function to determine if request should skip cache
-function shouldSkipCache(request, url) {
-  // Skip WebRTC connections
-  if (url.protocol === 'wss:' || url.protocol === 'ws:') {
-    return true;
-  }
-  
-  // Skip non-GET requests
-  if (request.method !== 'GET') {
-    return true;
-  }
-  
-  // Skip API endpoints
-  if (url.pathname.startsWith('/session') || 
-      url.hostname === 'api.openai.com' ||
-      url.hostname === 'localhost' && url.port === '3001') {
-    return true;
-  }
-  
-  // Skip dynamic content
-  if (url.pathname.includes('?') || url.search) {
-    return true;
-  }
-  
-  return false;
+  self.define = (depsNames, factory) => {
+    const uri = nextDefineUri || ("document" in self ? document.currentScript.src : "") || location.href;
+    if (registry[uri]) {
+      // Module is already loading or loaded.
+      return;
+    }
+    let exports = {};
+    const require = depUri => singleRequire(depUri, uri);
+    const specialDeps = {
+      module: { uri },
+      exports,
+      require
+    };
+    registry[uri] = Promise.all(depsNames.map(
+      depName => specialDeps[depName] || require(depName)
+    )).then(deps => {
+      factory(...deps);
+      return exports;
+    });
+  };
 }
+define(['./workbox-e639beba'], (function (workbox) { 'use strict';
 
-// Activate event - Claim all clients immediately
-self.addEventListener('activate', (event) => {
-  console.log('Service Worker activating...');
-  event.waitUntil(
-    Promise.all([
-      // Claim all clients immediately
-      self.clients.claim(),
-      // Clean up old caches
-      caches.keys().then((cacheNames) => {
-        return Promise.all(
-          cacheNames.map((cacheName) => {
-            if (cacheName !== CACHE_NAME) {
-              console.log('Deleting old cache:', cacheName);
-              return caches.delete(cacheName);
-            }
-          })
-        );
-      })
-    ])
-  );
-});
+  importScripts();
+  self.skipWaiting();
+  workbox.clientsClaim();
+  workbox.registerRoute("/", new workbox.NetworkFirst({
+    "cacheName": "start-url",
+    plugins: [{
+      cacheWillUpdate: async ({
+        request,
+        response,
+        event,
+        state
+      }) => {
+        if (response && response.type === 'opaqueredirect') {
+          return new Response(response.body, {
+            status: 200,
+            statusText: 'OK',
+            headers: response.headers
+          });
+        }
+        return response;
+      }
+    }]
+  }), 'GET');
+  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
+    "cacheName": "dev",
+    plugins: []
+  }), 'GET');
 
-// Handle messages from the main app
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    console.log('Received SKIP_WAITING message');
-    self.skipWaiting();
-  }
-});
+}));

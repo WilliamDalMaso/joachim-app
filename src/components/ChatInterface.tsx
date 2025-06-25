@@ -5,18 +5,12 @@ import LessonInterface from './LessonInterface';
 import LevelSelection from './LevelSelection';
 
 interface ChatInterfaceProps {
-  onBack?: () => void;
-  onLessonSelect?: (lesson: string) => void;
   className?: string;
 }
 
 type AppMode = 'chat' | 'lessons';
 
-const ChatInterface: React.FC<ChatInterfaceProps> = ({ 
-  onBack, 
-  onLessonSelect, 
-  className = '' 
-}) => {
+const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [botModuleOpen, setBotModuleOpen] = useState(false);
   const [currentBot, setCurrentBot] = useState('Listening');
@@ -139,6 +133,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     if (selectedLevel) {
       return (
         <LessonInterface
+          userId={userId}
           level={selectedLevel}
           onLevelComplete={handleLevelComplete}
           onSessionEnd={handleSessionEnd}
@@ -148,6 +143,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     
     return (
       <LevelSelection
+        userId={userId}
         onLevelSelect={handleLevelSelect}
         onBack={() => setAppMode('chat')}
       />

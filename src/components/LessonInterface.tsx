@@ -10,15 +10,15 @@ interface Lesson {
 }
 
 interface LessonInterfaceProps {
+  userId: string;
   level: string;
-  onBack?: () => void;
   onLevelComplete?: (level: string, nextLevel?: string) => void;
   onSessionEnd?: (lessonsCompleted: number) => void;
 }
 
 const LessonInterface: React.FC<LessonInterfaceProps> = ({
+  userId,
   level,
-  onBack,
   onLevelComplete,
   onSessionEnd
 }) => {
@@ -37,7 +37,6 @@ const LessonInterface: React.FC<LessonInterfaceProps> = ({
   const [nextLevel, setNextLevel] = useState<string | null>(null);
 
   const audioRef = useRef<HTMLAudioElement>(null);
-  const userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
   // Start session and load first lesson
   useEffect(() => {
